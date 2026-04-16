@@ -26,3 +26,21 @@ apellidos ='Martinez'
 mensaje = 'El niño dijo: "que pasa"'
 print (mensaje)
 
+# Laura Martinez : 36
+nombre_completo = nombre + " " + apellidos + ":  " + str(edad)
+print(nombre_completo)
+
+nombre_completo2 = f'{nombre} {apellidos}: {edad}'
+print (nombre_completo2)
+
+texto_largo = """
+Selecciona una opcion
+[1] Sopa
+[2] Pure de calabaza
+[3] postre
+
+"""
+
+opcion = input(texto_largo)
+print(f'la opcion es {opcion}')
+
