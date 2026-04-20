@@ -43,4 +43,32 @@ else:
     print(f'has estado {horas} horas. precio a pagar: {precio}€')
 
 
-    
+     # Multiplicador por vehículo
+    if vehiculo == "moto":
+        precio = precio * 0.7
+    elif vehiculo == "coche":
+        precio = precio * 1
+    else:
+        precio = precio * 1.5
+
+    precio_base = precio
+
+    # Descuento residente
+    if residente == "s":
+        descuento = precio_base * 0.2
+    else:
+        descuento = 0
+
+    total = precio_base - descuento
+
+    # Mostrar ticket
+    if residente == "s":
+        texto_residente = "sí"
+    else:
+        texto_residente = "no"
+
+    print("--- TICKET DE APARCAMIENTO ---")
+    print("Horas:", horas, "| Vehículo:", vehiculo, "| Residente:", texto_residente)
+    print("Precio base:", round(precio_base, 2), "€")
+    print("Descuento residente:", "-", round(descuento, 2), "€")
+    print("TOTAL:", round(total, 2), "€")
