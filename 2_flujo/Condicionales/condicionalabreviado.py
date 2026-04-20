@@ -10,3 +10,5 @@ else:
 mensaje = "luz encendida" if estado_luz else "luz apagada"   
 
 print(mensaje)
+
+
