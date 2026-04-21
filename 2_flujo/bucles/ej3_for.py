@@ -15,3 +15,4 @@ numero_vocales = 0
 for i in range(cantidad):
     if texto[i] == vocal:
        numero_vocales = numero_vocales + 1
+print(numero_vocales)
