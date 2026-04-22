@@ -1,21 +1,21 @@
-texto ="David"
+texto = "Pablo Pérez"
 
-# un string es una cadena de caracteres, es decir es un conjunto de caracteres.
+# un string es un cadena de caracteres, es decir es un conjunto de caracteres.
 
 # cuantos caracteres tiene un texto.
-print ( len(texto))  # cantidad de caracteres
-print(texto[4]) # imprime la d
-print(texto[0]) # imprime la D
-
-texto = "David"
+print( len(texto) ) # cantidad de caracteres
+print(texto[0]) # J
+print(texto[5]) # A
 
 for i in range(len(texto)):
     print(texto[i])
-
+    
 # upper() lower()
-# imprimir solo las mayusculas
+# imprimais solo las mayusculas
 
 for i in range(len(texto)):
-    if texto[i] == texto[i].lower():
+    if texto[i] == texto[i].upper():
         print(texto[i])
+
+
 
