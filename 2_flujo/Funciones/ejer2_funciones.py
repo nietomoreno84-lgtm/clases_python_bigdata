@@ -1,18 +1,16 @@
-input("numero_1", "numero_2" , numero_3):
-
+numero_1 = float(input('Dame el número: '))
+numero_2 = float(input('Dame el número: '))
+numero_3 = float(input('Dame el número: '))
 def sumar(n1,n2,n3):
-    return n1 + n2 + n3
+    return n1 + n2 +n3
+
 
 def dividir(divisor, dividendo):
     return divisor / dividendo
 
 def media(numero_1, numero_2, numero_3):
-    suma = sumar(numero_1, numero_2, numero_3)
-    media = dividir(suma, 3)
-    print(media)
+    suma = (numero_1 + numero_2 + numero_3)
+    resultado = dividir(suma, 3)
+    print(resultado)
 
-numero_1 = float(input ('dame un numero'))
-numero_2 = float(input ('dame un numero'))
-numero_3 = float(input ('dame un numero'))
-
-media(2,3,5)
+media(numero_1, numero_2, numero_3)
