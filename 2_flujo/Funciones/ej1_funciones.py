@@ -11,7 +11,6 @@ def restar(numero_A, numero_B):
 def multiplicar(n_A, n_B):
     return n_A * n_B
     
-
 # juanan
 def calcular(n1,n2, operacion):
     resultado = 0
@@ -23,9 +22,6 @@ def calcular(n1,n2, operacion):
         resultado = multiplicar(n1, n2)
     else:
         print('operacion no valida')
-    print(resultado)
+    print(resultado)  
     
-    
-    
-    
-calcular(12,2,'sumar')
+calcular(12,2,'fumar')
