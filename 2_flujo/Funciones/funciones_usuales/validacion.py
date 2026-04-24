@@ -14,3 +14,4 @@ print(texto.endswith('a')) #true
 busqueda = "lugar"
 resultado = busqueda.lower() in texto.lower()
 print('incluido' , resultado)
+
