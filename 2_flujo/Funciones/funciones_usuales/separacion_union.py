@@ -1,33 +1,29 @@
-# metodos de union
-nombre = "David"
-apellido = "Nieto"
-edad = 41
+# métodos de unión
+nombre = "Juan Antonio"
+apellido = "Pérez"
+edad = 44
 separador = " - "
 
-texto = F"{nombre}{separador}{apellido}{separador}{edad}"
-
+texto = f"{nombre}{separador}{apellido}{separador}{edad}"
 
 otro_texto = separador.join([nombre, apellido, str(edad)])
 print(texto)
 print(otro_texto)
 
 # metodos de separacion
-
 frase = "El presidente dijo: Hola como estan los maquinas"
 resultado = frase.partition(": ")
-print(resultado[2])
+print(resultado)
 
 # split()
-
 texto = "Porque la vida puede ser maravillosa"
-
 resultado = texto.split(' ')
-#crear un conjunto de elemnteos sin el espacio en blanco
+## crear un conjunto de elementos sin el espacio en blanco
 print(resultado[5])
 
-#splitlines() me permite separar lineas en un texto multilinea
+# splitlines() me permite separa lineas en un texto multilinea
 
-cadena = """ Hola
+cadena = """Hola
 bienvenido
 al
 maravilloso
@@ -36,11 +32,9 @@ python
 """
 
 print(cadena)
-
 conjunto_lineas = cadena.splitlines()
 print(conjunto_lineas)
 
-# deletrear una cadena de texto cualquiera
-
+# deletrear un cadena texto cualquier
 palabra = "supercalifragilistico"
 print(list(palabra))

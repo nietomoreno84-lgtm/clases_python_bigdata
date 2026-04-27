@@ -4,17 +4,16 @@
 # paso 2: crear una variables suma = 0
 # paso 3: añadir a suma el valor introducido previmente convertido.
 # paso 4: pulsando 0 acabamos el ejercicio.
-print ("-"*30)
-print("EJERCICIO 4 - SUMA ACUMULUDA")
-print("-"*30)
 
+print('#' * 40)
+print('EJERCICIO 4 - SUMA ACUMULADA')
+print('#' * 40)
+print(" ")
 suma = 0
 while True:
-    numero = int(input("Introduce un número: "))
-    
+    numero = int(input('Introduce un numero: '))
     if numero == 0:
         break
-    
     suma += numero
-
+    
 print(suma)

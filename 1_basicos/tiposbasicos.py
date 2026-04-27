@@ -1,14 +1,14 @@
-nombre_alumno ="David Nieto"
-print (nombre_alumno) # David Nieto
+nombre_alumno = "Mario Girón"
+print(nombre_alumno) # Mario Girón
 print(type(nombre_alumno))
 
 nombre_alumno = 21
-print (nombre_alumno)
+print(nombre_alumno)
 print(type(nombre_alumno))
 
-# tipos basicos en Python
+# Tipos Básicos en Python
 
-# Numericos
+# Numéricos
 
 edad = 36
 grados = -27
@@ -21,26 +21,25 @@ activo = False
 
 # cadena de caracteres - string
 
-nombre = "Laura"
-apellidos ='Martinez'
-mensaje = 'El niño dijo: "que pasa"'
-print (mensaje)
+nombre = "Irene"
+apellidos = 'Martínez'
+mensaje = 'El niño dijo: "Qué pasa"'
+print(mensaje)
 
-# Laura Martinez : 36
-nombre_completo = nombre + " " + apellidos + ":  " + str(edad)
+# Irene Martínez: 36
+nombre_completo = nombre + " " + apellidos + ": " + str(edad)
 print(nombre_completo)
 
 nombre_completo2 = f'{nombre} {apellidos}: {edad}'
-print (nombre_completo2)
+print(nombre_completo2)
 
 texto_largo = """
-Selecciona una opcion
+Selecciona una opción
 [1] Sopa
-[2] Pure de calabaza
-[3] postre
+[2] Puré de calabaza
+[3] Gazpacho
 
 """
 
 opcion = input(texto_largo)
-print(f'la opcion es {opcion}')
-
+print(f'La opción es {opcion}')

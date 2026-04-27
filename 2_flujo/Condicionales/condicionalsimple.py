@@ -1,24 +1,21 @@
-nota = float(input('dime tu nota: '))
+nota = float(input('Dime tu nota: '))
 
-if nota >= 0 and nota < 5: 
-    print ('suspenso')
-    print ('otra cosa')
+if nota >= 0 and nota < 5:
+    print('Suspenso')
+    print('Otra cosa')
 
 if nota >= 5 and nota <= 10:
-    print ('estas aprobado')
+    print('Estás aprobado')
 
 """
-    pide por input el importe de una compra
-    si el importe es mayor que 100 muestra el mensaje:
-        "aplicamos un 10% de descuento"
-    y ademas, mostramos el precio con el descuento aplicado    
-
+    Pide por input el importe de una compra
+    Si el importe es mayor que 100 muestra el mensaje:
+        "Aplicamos un 10% de descuento"
+        Y además, mostramos el precio con el descuento aplicado
 """
-
-precio = float (input('dime el precio:'))
+precio = float(input('Dime el importe: '))
 
 if precio > 100:
-    print('aplicamos el 10% de descuento')
+    print('Aplicamos el 10% de descuento')
     precio_con_descuento = precio * 0.9
-    print(f"precio original:{precio}€. precio descuento: {precio_con_descuento}€")
-    
+    print(f"Precio original: {precio}€. Precio Descuento: {precio_con_descuento}€")

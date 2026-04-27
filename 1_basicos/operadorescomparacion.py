@@ -2,18 +2,17 @@ numA = 18
 numB = 5
 
 # mayor que
-resultado = numA>numB
-print("mayor que:",resultado)
+resultado = numA > numB # >=
+print('Mayor que:', resultado)
 
-#menor que
+# menor que
 resultado = numA < numB
-print ("menor que:" , resultado)
+print('Menor que:', resultado)
 
-#igualdad
-resultado = numA==numB
-print ("igual que:" , resultado)
+# Igualdad
+resultado = numA == numB
+print("Igual que:", resultado)
 
-# distinto
+# Distinto
 resultado = numA != numB
-print("distinto:",  resultado)
-
+print("Distinto:", resultado)

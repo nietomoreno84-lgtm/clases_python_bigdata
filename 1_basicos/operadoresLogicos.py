@@ -1,26 +1,22 @@
-# and , or , not
+# and, or, not
+precio = float(input('Dime un precio: '))
+marca = input('Dime una marca: ')
 
-precio = float (input('dime un precio:'))
-marca = input ('dime una marca: ')
-
-resultado = precio > 100 and marca == "nike"
+resultado = (precio > 100) and (marca == "apple")
 print(resultado)
 
-# numero par o divisible por 5
-# 1. pedir el numero
-# 2. hacer la comparacion
+# Número par o divisible por 5
+# 1. Pedir el número
+# 2. Hacer la comprobación
 
-numero = float(input('introduce un numero: '))
+numero = float(input('Introduce un número: '))
 # es_par = numero % 2 == 0
 # multiplo_5 = numero % 5 == 0
-
-
 
 resultado = numero % 2 == 0 or numero % 5 == 0
 print(resultado)
 
-# operador de negacion
+# Negación
 
 esta_activo = True
-print (not esta_activo)
-
+print(not esta_activo)

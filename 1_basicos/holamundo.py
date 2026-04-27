@@ -1,9 +1,8 @@
 print("Hola Mundo")
 
-# comentario en una unica linea
+# Comentario en una única línea
 """
-    comentario
+    Comentario
     en varias
-    lineas
+    líneas
 """
-

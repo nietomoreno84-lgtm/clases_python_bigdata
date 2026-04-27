@@ -1,15 +1,8 @@
-# calculo de la multiplicacion de dos numeros
+# Cálculo de la multiplicación de dos números
 
-numA = input ("intruduce el primer numero:")
-numB = input ("introduce el segundo numero:")
+# Convertir el tipo de dato
+numA = float(input("Introduce el primer número: "))
+numB = float(input("Introduce el segundo número: "))
 
-#convertir el tipo de dato
-numA = float (numA)
-numB = float (numB)
-
-print(numA,numB)
 resultado = numA * numB
-print (f'el resultado de la multiplicacion es : {resultado}')
-
-
-
+print(f'El resultado de la multiplicación entre {numA} y {numB} es {resultado}')

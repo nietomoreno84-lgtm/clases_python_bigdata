@@ -1,19 +1,8 @@
 # replace => Sanitizar texto - limpiar textos
-
 frase = 'Ho)laÇm^u)nd^oÇde)sdeÇp)yth^on'
-frase = frase.replace(')' , '').replace('^' , '')
-frase = frase.replace('Ç' , ' ')
+frase = frase.replace(')', '').replace('^','')
+frase = frase.replace('Ç', ' ')
 print(frase)
-
-otra_frase = "Él envió más café frío allá después según él también pidió algún té allí recién así él podría reír todavía."
-
-
-otra_frase = "Él envió más café frío allá después según él también pidió algún té allí recién así él podría reír todavía."
-
-otra_frase = otra_frase.lower()
-otra_frase = otra_frase.replace("á","a").replace("é","e").replace("í","i").replace("ó","o").replace("ú","u")
-
-print(otra_frase)
 
 otra_frase = "Él envió más café frío allá después según él también pidió algún té allí recién así él podría reír todavía."
 
@@ -23,6 +12,7 @@ def quitar_acentos(texto):
 resultado = quitar_acentos(otra_frase)
 print(resultado)
 
-#eliminar los espacios en blanco dentro de una palabra. espacio por delante y por detras de la palabra
-nombre = "    Juan Antonio    "
-print(f'hola {nombre.strip()} como estas')
+
+# eliminar los espacio en blanco dentro de una palabra. espacio por delante y por detras de la palabra strip(), lstrip(), rstrip()
+nombre = "     Juan Antonio      "
+print(f'Hola {nombre.strip()} como estas')
