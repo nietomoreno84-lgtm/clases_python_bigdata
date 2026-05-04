@@ -7,24 +7,19 @@
 # Cuenta cuántos alumnos han aprobado (nota >= 5).
 # notas = [7.5, 4.0, 8.5, 6.0, 9.0, 3.5, 5.5]
 # =============================================================================
-
-# menu, pintar el menu con las opciones - lista notas, añadir una nota al final, añadir una nota por posicion, mostrar la lista ordenada, calcular media, calcular maximo, calcular minimo, cuantos alumnos han aprobado. salir
 notas = [7.5, 4.0, 8.5, 6.0, 9.0, 3.5, 5.5]
-
+# menu, pintar el menu con las opciones - lista notas, añadir una nota al final, añadir una nota por posicion, mostrar la lista ordenada, calcular media, calcular maximo, calcular minimo, cuantos alumnos han aprobado. salir
 def mostrar_notas(notas):
     for nota in notas:
+        #print(nota)
         color = "1" if nota < 5 else "2"
         print( f'\033[3{color}m {nota} \033[0m' )
-
-def inserta_nota(nota, posicion=len(notas)):        
-    notas.insert(posicion, nota)
-#imprimir en color rojo y verde
-#print( f'\033[31m {notas[1]} \033[0m' ) # rojo
-#print( f'\033[32m {notas[1]} \033[0m' ) # verde
-
+        
+def inserta_nota(nota, posicion=len(notas)):
+    notas.insert(posicion, nota)    
 
 def main():
-    notas = [7.5, 4.0, 8.5, 6.0, 9.0, 3.5, 5.5]
+  
     menu = """## Bienvenido a la aplicación de notas ##
     [1]. Listar la notas
     [2]. Añadir nueva nota
@@ -42,12 +37,14 @@ def main():
     if option == '1':
         mostrar_notas(notas)
     elif option == '2':
-        nota=float(input('dime una nota: '))
-        notas.append(nota)
+        nota = float(input('Dime una nota: '))
         inserta_nota(nota)
     elif option == '3':
-       nota= float(input('dime una nota: '))
-       posicion = input('dime en que posicion:') 
+        nota = float(input('Dime una nota: '))
+        posicion = int(input('Dime en que posicion: '))
+        inserta_nota(nota, posicion)
+    elif option == '4':
+        print('Ordenar de menor a mayor')
     elif option == '5':
         print('Calcular media')
     elif option == '6':

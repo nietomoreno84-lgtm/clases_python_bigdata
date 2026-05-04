@@ -15,16 +15,17 @@ print(animales)
 print(animales2)
 print(animales3)
 
-#metodo 2: indices [:]
 
-frutas = ['manzana','platano','pera','sandia']
-#un paso por referencia si modifico frutas tambien modifico frutas2
+# metodo 2: indices [:]
 
-frutas2=frutas
+frutas = ['manzana', 'platano', 'pera', 'sandia']
 
-#romper la referencia
+# un paso por referencia si modifico frutas también modifico frutas2
+frutas2 = frutas
 
+# romper la referencia
 frutas3 = frutas[:]
+
 frutas[2] = 'naranjas'
 
 print(frutas)
@@ -32,6 +33,11 @@ print(frutas2)
 print(frutas3)
 
 
-#max y MIN
-print(max(numeros))
-print(min(numeros))
+
+
+
+
+
+
+
+
