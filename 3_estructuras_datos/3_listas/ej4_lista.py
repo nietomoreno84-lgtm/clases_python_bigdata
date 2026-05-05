@@ -18,13 +18,37 @@ def mostrar_notas(notas):
 def inserta_nota(nota, posicion=len(notas)):
     notas.insert(posicion, nota)    
 
+def sumar(notas):
+    suma = 0
+    for nota in notas:
+        suma += nota
+    return suma
+
+def calcular_media(notas):
+    suma = sumar(notas)
+    print(f'La media de las notas es: {round(suma/len(notas), 2)}')
+
+# opcion 1: junior
+def contar_notas(notas):
+    contador = 0
+    for nota in notas:
+        if nota >= 5:
+            contador += 1
+    return contador
+
+# opcion 2: senior
+def contar_notas_senior(notas, tipo='aprobados'):
+    lista_aprobados = list(filter(lambda nota: nota >= 5, notas))
+    if tipo == 'suspensos':
+        return len(notas) - len(lista_aprobados)
+    return len(lista_aprobados)
+
 def main():
-  
     menu = """## Bienvenido a la aplicación de notas ##
     [1]. Listar la notas
     [2]. Añadir nueva nota
     [3]. Añadir nueva nota en cualquier posición
-    [4]. Ordenar por mayor a menor
+    [4]. Ordenar de mayor a menor
     [5]. Calcular media
     [6]. Calcular máximo
     [7]. Calcular mínimo
@@ -44,15 +68,18 @@ def main():
         posicion = int(input('Dime en que posicion: '))
         inserta_nota(nota, posicion)
     elif option == '4':
-        print('Ordenar de menor a mayor')
+        notas_ordenadas = sorted(notas,reverse=True)
+        mostrar_notas(notas_ordenadas)
     elif option == '5':
-        print('Calcular media')
+        calcular_media(notas)
     elif option == '6':
-        print('Calcular maximo')
+        print(f'El nota máxima es {max(notas)}')
     elif option == '7':
-        print('Calcular minimo')
+         print(f'El nota mínima es {min(notas)}')
     elif option == '8':
-        print('Cuanto aprobados')
+        tipo = input('¿Qué buscas, aprobados o suspensos?: ')
+        numero = contar_notas_senior(notas, tipo)
+        print(f"el numero de {tipo} es igual a {numero}")
     elif option == 'x':
         print('Hasta pronto')
         return

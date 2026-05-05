@@ -38,10 +38,9 @@ print( producto['pantalla'][0] ) # 1920
 # ram
 print( producto['caracteristicas']['ram'] )
 # discos 
-print ('-----------------')
+print('---------')
 for i in range(len(producto['caracteristicas']['disco'])):
     print(producto['caracteristicas']['disco'][i])
-
 
 # podemos extraer todos lo elementos
 for valor in alumno.values():
@@ -57,10 +56,11 @@ print("----------")
 # podemos extraer todas las claves con sus elementos
 for clave, valor in alumno.items():
     print( f"{clave}: {valor}" )
+    
+print( alumno.values() )
+print( alumno.keys())
+print( alumno.items())
 
-print(alumno.values())    
-print(alumno.keys())
-print(alumno.items())
 
 
 
