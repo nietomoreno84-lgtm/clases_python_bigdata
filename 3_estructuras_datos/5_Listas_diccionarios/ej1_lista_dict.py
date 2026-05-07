@@ -5,10 +5,20 @@
 # podremos insertar los contactos que queramos antes de salir
 contactos = []
 
+def limpiadora_datos(texto):
+    # paso 1: pasar a minuscula
+    texto = texto.lower()
+    # paso 2: quitar acentos
+    lista_vocales_acentos = ['á', 'é', 'í', 'ó', 'ú', 'ü']
+    lista_vocales = ['a', 'e', 'i', 'o', 'u', 'u']
+    for i in range(len(lista_vocales_acentos)):
+        texto = texto.replace( lista_vocales_acentos[i], lista_vocales[i] )
+    return texto
+
 def insertar_contacto(nombre, tlf, lista):
     # paso 1: crear el diccionario
     contacto_nuevo = {
-        'nombre': nombre,
+        'nombre': limpiadora_datos(nombre),
         'telefono': tlf
     }
     # paso 2: añadir el diccionario a la lista
@@ -31,23 +41,17 @@ def pintamos_agenda(lista):
         
 def borrar_contacto(lista, nombre=""):
     if nombre != "":
-        # borramos por nombre
-        lista.remove(nombre)
-        print(f'### contacto con nombre {nombre} eliminado')
+        for contacto in lista:
+            if contacto['nombre'] == nombre:
+                # este es el contacto que quiero borrar
+                lista.remove(contacto)
+            
+        print(f'### contacto con nombre {nombre} eliminado ###')
     else:
         #borramos el ultimo
         lista.pop()
         print('### Último contacto borrado correctamente ###')
-        
-def limpiadora_datos(texto):
-    # paso 1: pasar a minuscula
-    texto = texto.lower()
-    # paso 2: quitar acentos
-    lista_vocales_acentos = ['á', 'é', 'í', 'ó', 'ú', 'ü']
-    lista_vocales = ['a', 'e', 'i', 'o', 'u', 'u']
-    for i in range(len(lista_vocales_acentos)):
-        texto = texto.replace( lista_vocales_acentos[i], lista_vocales[i] )
-    return texto
+  
 
 def main():
     menu = """## Bienvenido a la agenda de contactos ##

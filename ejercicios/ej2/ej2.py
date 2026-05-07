@@ -51,5 +51,19 @@ def filtrar_por_nota(peliculas, nota_min, nota_max):
     return lista_filtrada   
 
 
-peliculas_nota_suspensa = filtrar_por_nota(peliculas2, 0, 5)
-pintar_peliculas(peliculas_nota_suspensa, 'Peliculas suspensas')
+#peliculas_nota_suspensa = filtrar_por_nota(peliculas2, 0, 5)
+#pintar_peliculas(peliculas_nota_suspensa, 'Peliculas suspensas')
+
+
+# paso 1: recorrer la lista
+# paso 2: saber la condicion que encuentra lo que busco
+# paso 3: meterlo en una lista nueva
+
+
+def ordenar(peliculas, ordenacion):
+    booleano = True if ordenacion == 'dsc' else False
+    resultado = sorted(peliculas, key=lambda pelicula: pelicula['anio'], reverse=booleano)
+    return resultado
+
+peliculas_ordenadas = ordenar(peliculas2, 'dsc') # 'dsc"
+pintar_peliculas(peliculas_ordenadas, 'Peliculas ordenadas')

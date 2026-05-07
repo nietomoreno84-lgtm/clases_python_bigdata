@@ -1,4 +1,4 @@
-numeros = [4, -2, 7, -5, 0, 3, -1, 8, 0, -9, 6 ]
+numeros = [4, -2, 7, -5, 0, 3, -1, 8, 0, -9, 6]
 
 # Crea una función clasificar_numeros(lista) que reciba una lista de números y devuelva tres listas: positivos, negativos y ceros.
 def clasificar_numeros(lista):
@@ -34,3 +34,4 @@ def estadisticas(lista):
 
 
 estadisticas(numeros)
+
