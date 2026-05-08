@@ -16,19 +16,21 @@ El programa debe imprimir siempre al final (haya fallado o no) un mensaje que di
 """
 
 
-recompensas = ["Espada de madera", "Poción de salud", "Escudo", "Botas de velocidad", "Oro"]
 
+def jugar():
+    recompensas = ["Espada de madera", "Poción de salud", "Escudo", "Botas de velocidad", "Oro"]
+    try:
+        numero = int(input('dime un numero de recompensas: '))
+        print(recompensas[numero])
+    except ValueError:
+        print('la selección no puede ser una letra, debe ser un número')
+        jugar()
+    except IndexError:    
+        print('no esta dentro del rango')
+        jugar()
+    except: 
+        print('futuro error no previsto')
+    finally:
+        print('Cerrando el catálogo de recompensas. Gracias por jugar')  
 
-try:
-    numero_de_recompensas = int(input('dime un numero de recompensas: ')
-    recompensas == ["Espada de madera"= {'0'}], ["Poción de salud" = {'1'}], ["Escudo" = {3}], ["Botas de velocidad" = {4}],["Oro"={5}]
-    
-    print(recompensas)
-except ValueError:
-    print('los valores no son numeros: ')
-except IndexError:    
-    print('no esta dentro del rango')
-except: 
-    print('futuro error no previsto')  
-
-print('introduce un numero')
+jugar()
