@@ -1,8 +1,6 @@
 """
 Tu objetivo es escribir un programa que haga lo siguiente:
-
 Crea una lista con 5 recompensas (textos).
-
 Pide al usuario que introduzca el número de la recompensa que quiere extraer (del 0 al 4).
 
 Utiliza un bloque try-except-finally para controlar los posibles errores:
@@ -15,22 +13,19 @@ El programa debe imprimir siempre al final (haya fallado o no) un mensaje que di
     
 """
 
-
-
 def jugar():
     recompensas = ["Espada de madera", "Poción de salud", "Escudo", "Botas de velocidad", "Oro"]
     try:
-        numero = int(input('dime un numero de recompensas: '))
+        numero = int(input('dime que recompensa quieres: '))
         print(recompensas[numero])
+    except IndexError:
+        print('Dentro del listado no existe esta recompensa')
+        jugar()
     except ValueError:
-        print('la selección no puede ser una letra, debe ser un número')
+        print('La recompensa no puede ser una letra tiene que ser un numero')
         jugar()
-    except IndexError:    
-        print('no esta dentro del rango')
-        jugar()
-    except: 
-        print('futuro error no previsto')
     finally:
-        print('Cerrando el catálogo de recompensas. Gracias por jugar')  
-
+        print("Cerrando el catálogo de recompensas. ¡Gracias por jugar!")
+        
+        
 jugar()

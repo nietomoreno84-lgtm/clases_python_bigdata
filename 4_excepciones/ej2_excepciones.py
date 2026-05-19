@@ -1,4 +1,3 @@
-
 # =============================================================================
 # EJERCICIO 1: CALCULADORA CIENTÍFICA ROBUSTA
 # Implementa una calculadora que soporte las operaciones:
@@ -14,7 +13,6 @@
 # - Bloque finally: siempre muestra "Operación procesada"
 # - El programa pide una nueva operación al terminar (recursivo o bucle)
 # =============================================================================
-
 import math
 import lib.functions as fn
 
@@ -72,13 +70,11 @@ def main():
             print('Hasta pronto')
             return
         else:
-            print('opcion no valida')
-        main()
+            print('opcion no valida') 
     except:
         print('error generico')
     finally:
         print('Operación procesada')
-    
-main()
+    main()
     
 main()

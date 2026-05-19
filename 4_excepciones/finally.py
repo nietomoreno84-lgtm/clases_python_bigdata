@@ -1,20 +1,19 @@
-print('--simulacion de conexion a BBDD')
+print('-- Simulacion de conexion a BBDD')
 
 conexion_bbdd = False
-lista_inexsitente = ['uno' , 'dos']
-
-try: 
-    print('1 - conectando a la bbdd')
+lista_inexistente = ['uno','dos', 'tres']
+try:
+    print('1 - conectando a la BBDD')
     conexion_bbdd = True
-    print('2 - pedimos los datos de un cliente')
-    cliente = lista_inexsitente[2]
+    print('2 - pedimos los dato de un cliente')
+    cliente = lista_inexistente[2]
     print('cliente encontrado')
 except NameError:
-    print('la tabla de clientes no exixte')
+    print('la tabla de clientes no existe')
 except IndexError:
-    print('el cliente solicitado no existe')
+    print('El cliente solicitado no existe')
 finally:
-    print('cierro la conexion')  
+    print('cierro la conexion')
     
-      
-print('lo siguiente')    
+
+print('lo siguiente')

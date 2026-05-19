@@ -5,6 +5,7 @@ def comprobar_duplicados(email, tel, lista):
             return False
     # si no hay nada devolvemos True por que no hay duplicados
     return True
+    
 
 
 def insertar_contacto(nombre, email, tel, lista):
@@ -32,5 +33,3 @@ def pintar_contactos(lista):
         print("-"*30)
         print(f"{contacto['nombre']} - {contacto['email']} - {contacto['telefono']}")
         print("-"*30)
-
-

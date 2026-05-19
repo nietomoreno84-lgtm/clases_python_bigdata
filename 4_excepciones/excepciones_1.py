@@ -1,11 +1,9 @@
-#  try - except
-# try maneja la parte correcta o parte  esperada
+## try - except 
+# try maneja la parte correcta o parte esperada
 # except maneja el posible error.
 
-
-
-try: 
-    entrada = input('dime un numero: ')
+try:
+    entrada = input('Dime un numero: ')
     numero = int(entrada)
     print(numero)
 except ValueError:
@@ -13,3 +11,4 @@ except ValueError:
 except:
     print('error generico')
     
+print('cosas')
