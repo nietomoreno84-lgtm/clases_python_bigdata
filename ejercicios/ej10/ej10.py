@@ -1,4 +1,3 @@
-
 from openpyxl import load_workbook, Workbook
 import os
 from lib.functions import limpiar_id, limpiar_texto, limpiar_precio, limpiar_stock
@@ -62,3 +61,4 @@ def procesar(lista):
 datos = cargar_excel('data', 'inventario_sucio.xlsx')
 datos_limpios = procesar(datos)
 crear_excel('data', 'inventario_limpio.xlsx', datos_limpios )
+       

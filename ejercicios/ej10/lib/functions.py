@@ -35,5 +35,3 @@ def limpiar_stock(valor):
         return 0 if stock_num < 0 else int(stock_num)
     except ValueError:
         return 0
-
-
