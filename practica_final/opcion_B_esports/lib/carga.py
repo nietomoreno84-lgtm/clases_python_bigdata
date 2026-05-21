@@ -3,7 +3,7 @@ from openpyxl import load_workbook
 import json
 
 
-def cargar_csv(carpeta, fichero):
+def cargar_csv(carpeta, nombre):
     """
     Carga un archivo CSV y devuelve su contenido como una lista de diccionarios.
 
@@ -33,15 +33,16 @@ def cargar_csv(carpeta, fichero):
         UnicodeDecodeError:
             Se produce si el archivo no está codificado en UTF-8.
     """
-    fichero = open(f"{carpeta}/{fichero}", "r", encoding='UTF-8')
+    fichero = open(f"{carpeta}/{nombre}", "r", encoding='UTF-8')
     lector = csv.DictReader(fichero)
     lista = list(lector)
+    pintar_datos_ficheros(nombre,lista)
     fichero.close()
     return lista
 
 
 
-def cargar_excel(carpeta, fichero):
+def cargar_excel(carpeta, nombre):
     """
     Carga un archivo Excel y devuelve su contenido como una lista de diccionarios.
 
@@ -102,7 +103,7 @@ def cargar_excel(carpeta, fichero):
         InvalidFileException:
             Se produce si el archivo no tiene un formato Excel válido.
     """
-    excel = load_workbook(f'./{carpeta}/{fichero}')
+    excel = load_workbook(f'./{carpeta}/{nombre}')
     hoja = excel.active
     lista = []
 
@@ -113,6 +114,8 @@ def cargar_excel(carpeta, fichero):
     for fila in hoja.iter_rows(min_row=2, values_only=True):
         diccionario = dict(zip(cabeceras, fila))
         lista.append(diccionario)
+
+    pintar_datos_ficheros(nombre,lista)
  
     return lista
 
@@ -180,8 +183,19 @@ def cargar_json(carpeta, nombre):
     try:
         fichero = open(f"./{carpeta}/{nombre}", "r", encoding="UTF-8")
         datos = json.load(fichero)
+
+        pintar_datos_ficheros(nombre,datos)
+
         return datos
     except FileNotFoundError:
         print('Archivo o carpeta no encontrado')
 
 
+def pintar_datos_ficheros(fichero,lista):
+    print('Numero total de registros:', len(lista))
+    print('Nombre del fichero', fichero)
+    print('Nombre de los campos:', list(lista[0].keys()))
+    for i in range(5):
+            print(lista[i])
+            
+                
