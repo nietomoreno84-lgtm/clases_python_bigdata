@@ -13,7 +13,38 @@ correcciones_tildes = {
     "giron":       "Girón"
 }
 
+# # unidades = {
+# #         "cero": 0, "uno": 1, "dos": 2, "tres": 3,
+# #         "cuatro": 4, "cinco": 5, "seis": 6,
+# #         "siete": 7, "ocho": 8, "nueve": 9
+# #     }
 
+# # especiales = {
+# #         "diez": 10, "once": 11, "doce": 12,
+# #         "trece": 13, "catorce": 14, "quince": 15,
+# #         "dieciseis": 16, "diecisiete": 17,
+# #         "dieciocho": 18, "diecinueve": 19,
+# #         "veinte": 20
+# #     }
+
+# # decenas = {
+# #         "treinta": 30, "cuarenta": 40,
+# #         "cincuenta": 50, "sesenta": 60,
+# #         "setenta": 70, "ochenta": 80,
+# #         "noventa": 90
+# #     }
+
+# # centenas = {
+# #         "cien": 100,
+# #         "doscientos": 200,
+# #         "trescientos": 300,
+# #         "cuatrocientos": 400,
+# #         "quinientos": 500,
+# #         "seiscientos": 600,
+# #         "setecientos": 700,
+# #         "ochocientos": 800,
+# #         "novecientos": 900
+#     }
 
 def normalizar_texto(texto):
     """
@@ -146,3 +177,50 @@ def limpiar_texto(valor, mayusculas = False):
 
 
 
+def limpiar_valor_numerico(valor):
+    lista_monedas = ['€', '$']
+    if not valor: 
+        return 0.0
+    precio_txt = str(valor).strip().replace(',', '').replace('.','').lower()
+    for moneda in lista_monedas:
+        precio_txt = precio_txt.replace(moneda, '')
+    try:
+        return round(float(precio_txt), 3)
+    except ValueError:
+        return None
+    
+
+# def texto_a_numero(texto):
+
+#     palabras = texto.lower().replace("y", "").split()
+
+#     total = 0
+#     actual = 0
+
+#     for palabra in palabras:
+
+#         if palabra in unidades:
+#             actual += unidades[palabra]
+
+#         elif palabra in especiales:
+#             actual += especiales[palabra]
+
+#         elif palabra in decenas:
+#             actual += decenas[palabra]
+
+#         elif palabra in centenas:
+#             actual += centenas[palabra]
+
+#         elif palabra == "mil":
+#             if actual == 0:
+#                 actual = 1
+#             total += actual * 1000
+#             actual = 0
+
+#     return total + actual
+
+
+# print(texto_a_numero("dos mil diecinueve"))
+# print(texto_a_numero("mil novecientos noventa y nueve"))
+# precio_limpio = limpiar_valor_numerico(  '15894,58€ ' )
+# print(precio_limpio)

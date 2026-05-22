@@ -1,14 +1,69 @@
-# 5.	Para cada fichero, crea una función que analice y cuente:
-# •	Valores vacíos por campo: None, cadena vacía, "N/A", "-", "no disponible", etc.
-# •	Duplicados exactos y parciales (mismo dato escrito diferente, ej: "Los Rebeldes" vs "los rebeldes").
-# •	Formatos inconsistentes: ¿cuántas variaciones distintas hay para un mismo tipo de campo?
-# •	Valores fuera de rango: precios negativos, edades imposibles, etc.
-# •	Espacios extra: campos con espacios al principio, al final o dobles en medio.
-# # 
-import csv
-from openpyxl import load_workbook
-import json
 
-valores_vacios = ["", None, "N/A", "-", "no disponible"]
+from lib.limpieza import normalizar_texto
+from lib.limpieza import limpiar_valor_numerico
 
 
+
+def procesar_equipo(lista):
+    ## recorrer la lista y limpiar cada elemento de la lista. El objetivo de esta funcion es recibir una lista de datos sucia y devolverla limpia.
+    lista_limpia = []
+    for item in lista:
+       item_limpio = {
+      
+           'presupuesto_anual': limpiar_valor_numerico(item['presupuesto_anual']),
+           'nombre_equipo' : normalizar_texto(item['nombre_equipo']),
+           'region': normalizar_texto(item['region']),
+           'sede': normalizar_texto(item['sede']),
+       }
+       lista_limpia.append(item_limpio)
+    return lista_limpia
+
+def procesar_jugadores(lista):
+    lista_limpia = []
+    for item in lista:
+       item_limpio = {
+           'id_jugador': normalizar_texto(item['id_jugador']),
+           'gamertag' : normalizar_texto(item['gamertag']),
+           'nombre_real': normalizar_texto(item['nombre_real']),
+           'edad': limpiar_valor_numerico(item['edad']),
+           'pais': normalizar_texto(item['pais']),
+            'equipo': normalizar_texto(item['equipo']),
+            'rol': normalizar_texto(item['rol']),
+            'salario_mensual': limpiar_valor_numerico(item['salario_mensual']),
+
+
+       }
+       lista_limpia.append(item_limpio)
+    return lista_limpia
+
+def procesar_partidas(lista):
+    lista_limpia = []
+    for item in lista:
+       item_limpio = {
+           'id_partida': normalizar_texto(item['id_partida']),
+           'equipo_1': normalizar_texto(item['equipo_1']),
+           'equipo_2': normalizar_texto(item['equipo_2']),
+           'puntuacion_1': limpiar_valor_numerico(item['puntuacion_1']),
+            'puntuacion_2': limpiar_valor_numerico(item['puntuacion_2']),
+            'mapa': normalizar_texto(item['mapa']),
+            'torneo': normalizar_texto(item['torneo']),
+            'duracion_minutos' : limpiar_valor_numerico(item['duracion_minutos'])
+             }
+       lista_limpia.append(item_limpio)
+    return lista_limpia
+
+
+
+def procesar_premios(lista):
+    lista_limpia = []
+    for item in lista:
+       item_limpio = {
+           'torneo': normalizar_texto(item['torneo']),
+           'edicion': normalizar_texto(item['edicion']),
+           'equipo': normalizar_texto(item['equipo']),
+           'posicion': limpiar_valor_numerico(item['posicion']),
+            'premio_eur': limpiar_valor_numerico(item['premio_eur']),
+          
+             }
+       lista_limpia.append(item_limpio)
+    return lista_limpia
