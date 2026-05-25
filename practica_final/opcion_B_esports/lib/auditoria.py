@@ -14,6 +14,7 @@ def procesar_equipo(lista):
            'nombre_equipo' : normalizar_texto(item['nombre_equipo']),
            'region': normalizar_texto(item['region']),
            'sede': normalizar_texto(item['sede']),
+           'anio_fundacion':item['anio_fundacion']
        }
        lista_limpia.append(item_limpio)
     return lista_limpia
@@ -67,3 +68,26 @@ def procesar_premios(lista):
              }
        lista_limpia.append(item_limpio)
     return lista_limpia
+
+
+
+
+
+def cuantificacion_correciones(equipos_sucios, equipos_limpios):
+  
+
+    # equipos_sucios y equipos_limpios es una lista de diccionarios
+    # como se recorre una lista
+    contador_cambios =0     
+    for i in range(len(equipos_sucios)):
+        if equipos_sucios[i]['nombre_equipo'] != equipos_limpios[i]['nombre_equipo']:
+            contador_cambios += 1
+        if equipos_sucios[i]['region'] != equipos_limpios[i]['region']:
+            contador_cambios += 1 
+        if equipos_sucios[i]['anio_fundacion'] != equipos_limpios[i]['anio_fundacion']:
+            contador_cambios += 1
+        if equipos_sucios[i]['presupuesto_anual'] != equipos_limpios[i]['presupuesto_anual']:
+            contador_cambios += 1
+        if equipos_sucios[i]['sede'] != equipos_limpios[i]['sede']:
+            contador_cambios += 1
+    return(contador_cambios)

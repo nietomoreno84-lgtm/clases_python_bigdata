@@ -2,52 +2,341 @@
 
 
 
-correcciones_tildes = {
-    "jose":       "José",      "maria":      "María",
-    "garcia":     "García",    "gonzalez":   "González",
-    "martinez":   "Martínez",  "lopez":      "López",
-    "perez":      "Pérez",     "sanchez":    "Sánchez",
-    "gomez":      "Gómez",     "fernandez":  "Fernández",
-    "rodriguez":  "Rodríguez", "hernandez":  "Hernández",
-    "ramirez":    "Ramírez",   "gutierrez":  "Gutiérrez",
-    "giron":       "Girón"
+
+
+mapeo_tildes = {
+
+    # — Nombres propios (personas) —
+    "Adrian":       "Adrián",
+    "Alvaro":       "Álvaro",
+    "Angel":        "Ángel",
+    "Asuncion":     "Asunción",
+    "Cesar":        "César",
+    "Encarnacion":  "Encarnación",
+    "Ines":         "Inés",
+    "Ivan":         "Iván",
+    "Jose":         "José",
+    "Lucia":        "Lucía",
+    "Monica":       "Mónica",
+    "Nicolas":      "Nicolás",
+    "Noemi":        "Noemí",
+    "Oscar":        "Óscar",
+    "Raul":         "Raúl",
+    "Rocio":        "Rocío",
+    "Ruben":        "Rubén",
+    "Tomas":        "Tomás",
+    "Valentin":     "Valentín",
+    "Veronica":     "Verónica",
+    "Victor":       "Víctor",
+
+    # — Apellidos —
+    "Alvarez":      "Álvarez",
+    "Angeles":      "Ángeles",
+    "Benitez":      "Benítez",
+    "Calderon":     "Calderón",
+    "Cordoba":      "Córdoba",
+    "Cortes":       "Cortés",
+    "Diaz":         "Díaz",
+    "Dominguez":    "Domínguez",
+    "Duran":        "Durán",
+    "Exposito":     "Expósito",
+    "exposito":     "expósito",
+    "Fernandez":    "Fernández",
+    "Garcia":       "García",
+    "Gimenez":      "Giménez",
+    "Giron":        "Girón",
+    "Gomez":        "Gómez",
+    "Gutierrez":    "Gutiérrez",
+    "Hernandez":    "Hernández",
+    "Ibanez":       "Ibáñez",
+    "Jimenez":      "Jiménez",
+    "Leon":         "León",
+    "Lopez":        "López",
+    "Marin":        "Marín",
+    "Martinez":     "Martínez",
+    "Mendez":       "Méndez",
+    "Millan":       "Millán",
+    "Munoz":        "Muñoz",
+    "Nunez":        "Núñez",
+    "Pena":         "Peña",
+    "Perez":        "Pérez",
+    "Rios":         "Ríos",
+    "Roldan":       "Roldán",
+    "Saez":         "Sáez",
+    "Sanchez":      "Sánchez",
+    "Suarez":       "Suárez",
+    "Vazquez":      "Vázquez",
+
+    # — Ciudades / regiones —
+    "Berlin":           "Berlín",
+    "Bogota":           "Bogotá",
+    "Latinoamerica":    "Latinoamérica",
+    "Mexico":           "México",
+    "Norteamerica":     "Norteamérica",
+    "Paris":            "París",
+    "Peru":             "Perú",
+    "Sao":              "São",
+    "Seul":             "Seúl",
+
+    # — Vocabulario general (roles, cargos, palabras comunes) —
+    "Edicion":      "Edición",
+    "Espana":       "España",
+    "espana":       "españa",
+    "Lider":        "Líder",
+    "Manager":      "Mánager",
+    "Psicologo":    "Psicólogo",
+    "septimo":      "séptimo",
+    "Triton":       "Tritón",
+    "Vertigo":      "Vértigo",
+}
+# DICCIONARIO MAESTRO DE MAPEO CONSOLIDADO
+mapeo_master = {
+    # --- MAPEO DE MESES ---
+    "meses": {
+        "enero": 1, "febrero": 2, "marzo": 3, "abril": 4,
+        "mayo": 5, "junio": 6, "julio": 7, "agosto": 8,
+        "septiembre": 9, "octubre": 10, "noviembre": 11, "diciembre": 12,
+        "jan": 1, "feb": 2, "mar": 3, "apr": 4, "may": 5, "jun": 6,
+        "jul": 7, "aug": 8, "sep": 9, "oct": 10, "nov": 11, "dec": 12
+    },
+
+    # --- MAPEO DE REGIONES ---
+    "region": {
+        "asia": "Asia",
+        "ASIA": "Asia",
+        "eu": "Europa",
+        "EU": "Europa",
+        "Eu": "Europa",
+        "europa": "Europa",
+        "latam": "Latinoamérica",
+        "latinoamerica": "Latinoamérica",
+        "Latinoamerica": "Latinoamérica",
+        "norteamerica": "Norteamérica",
+        "NORTEAMERICA": "Norteamérica"
+    },
+
+    # --- MAPEO DE AÑOS DE FUNDACIÓN ---
+    "anios_fundacion": {
+        "dos mil diecinueve": "2019",
+        "dos mil veinte": "2020",
+        "2031": "2021"
+    },
+
+    # --- MAPEO DE PRESUPUESTOS ---
+    "presupuesto_anual": {
+        "1,609,517": "1609517",
+        "1,869,817": "1869817",
+        "1611336.00": "1611336",
+        "1844733.00": "1844733"
+    },
+
+    # --- MAPEO DE PAÍSES ---
+    "pais": {
+        "ARGENTINA": "Argentina",
+        "argentina": "Argentina",
+        "Argetina": "Argentina",
+        "BRASIL": "Brasil",
+        "Brazil": "Brasil",
+        "brasil": "Brasil",
+        "CHILE": "Chile",
+        "chile": "Chile",
+        "COLOMBIA": "Colombia",
+        "Kolombia": "Colombia",
+        "colombia": "Colombia",
+        "FRANCE": "Francia",
+        "France": "Francia",
+        "FRANCIA": "Francia",
+        "francia": "Francia",
+        "Espana": "España",
+        "espña": "España",
+        "españa": "España",
+        "PERU": "Perú",
+        "Peru": "Perú",
+        "peru": "Perú",
+        "KR": "Corea del Sur",
+        "Korea": "Corea del Sur",
+        "Corea": "Corea del Sur",
+        "corea del sur": "Corea del Sur",
+        "DINAMARCA": "Dinamarca",
+        "Denmark": "Dinamarca",
+        "dinamarca": "Dinamarca",
+        "MEXICO": "México",
+        "Mexico": "México",
+        "Mejico": "México",
+        "PORTUGAL": "Portugal",
+        "SUECIA": "Suecia",
+        "Sweden": "Suecia"
+    },
+
+    # --- MAPEO DE ROLES ---
+    "rol": {
+        "SUPPORT": "Support",
+        "support": "Support",
+        "Soporte": "Support",
+        "Sup": "Support",
+        "TANK": "Tank",
+        "tank": "Tank",
+        "Tanque": "Tank",
+        "tanque": "Tank",
+        "DAMAGE": "Damage",
+        "damage": "Damage",
+        "DPS": "Damage",
+        "dps": "Damage",
+        "ENTRY": "Entry",
+        "entry": "Entry",
+        "Entrada": "Entry",
+        "Entry Fragger": "Entry",
+        "FLEX": "Flex",
+        "flex": "Flex",
+        "Flexible": "Flex",
+        "IGL": "IGL",
+        "igl": "IGL",
+        "Igl": "IGL",
+        "In Game Leader": "IGL",
+        "Líder": "IGL",
+        "LURKER": "Lurker",
+        "lurker": "Lurker",
+        "AWPER": "AWPer",
+        "awper": "AWPer",
+        "Sniper": "AWPer"
+    },
+
+    # --- MAPEO DE EQUIPOS (CONSOLIDADO Y UNIFICADO) ---
+    "equipo": {
+        # Blaze Team
+        "  Blaze Team": "Blaze Team",
+        "BLAZE TEAM": "Blaze Team",
+        "Blaze Team  ": "Blaze Team",
+        "Blaze eTam": "Blaze Team",
+        "BlazeTeam": "Blaze Team",
+        "blaze team": "Blaze Team",
+        
+        # Byte Force
+        "  Byte Force": "Byte Force",
+        "BYTE FORCE": "Byte Force",
+        "Byte Force  ": "Byte Force",
+        "Byet Force": "Byte Force",
+        "ByteForce": "Byte Force",
+        "byte force": "Byte Force",
+        
+        # Cyber Dragons
+        "  Cyber Dragons": "Cyber Dragons",
+        "CYBER DRAGONS": "Cyber Dragons",
+        "Cyber Dragons  ": "Cyber Dragons",
+        "CyberDragons": "Cyber Dragons",
+        "cyber dragons": "Cyber Dragons",
+        "CyberD ragons": "Cyber Dragons",
+        
+        # Crystal Gaming
+        "Crystal Gaming  ": "Crystal Gaming",
+        "CRYSTAL GAMING": "Crystal Gaming",
+        "Crystal Gamnig": "Crystal Gaming",
+        "CrystalGaming": "Crystal Gaming",
+        "crystal gaming": "Crystal Gaming",
+        
+        # Dark Wolves
+        "Dark Wolves  ": "Dark Wolves",
+        "Dar kWolves": "Dark Wolves",
+        "dark wolves": "Dark Wolves",
+        "DARK WOLVES": "Dark Wolves",
+        
+        # Eclipse
+        "ECLIPSE": "Eclipse",
+        "Eclipse  ": "Eclipse",
+        "Eclpise": "Eclipse",
+        
+        # Iron Bears
+        "Iron Baers": "Iron Bears",
+        "Iron Bears  ": "Iron Bears",
+        "IronBears": "Iron Bears",
+        
+        # Neon Strikers
+        "NEON STRIKERS": "Neon Strikers",
+        "NeonStrikers": "Neon Strikers",
+        "neon strikers": "Neon Strikers",
+        "Neon Srtikers": "Neon Strikers",
+        "  Neon Strikers": "Neon Strikers",
+        "Neon Strikers  ": "Neon Strikers",
+        
+        # Nova Squad
+        "NOVA SQUAD": "Nova Squad",
+        "Nova Squad  ": "Nova Squad",
+        "Noav Squad": "Nova Squad",
+        "nova squad": "Nova Squad",
+        "NovaSquad": "Nova Squad",
+        "  Nova Squad": "Nova Squad",
+        
+        # Quantum Five
+        "  Quantum Five": "Quantum Five",
+        "QUANTUM FIVE": "Quantum Five",
+        
+        # Arctic Foxes
+        "ARCTIC FOXES": "Arctic Foxes",
+        "Arctic Foxes  ": "Arctic Foxes",
+        "Arctic Fxoes": "Arctic Foxes",
+        "ArcticFoxes": "Arctic Foxes",
+        "arctic foxes": "Arctic Foxes",
+        
+        # Raptors GG
+        "  Raptors GG": "Raptors GG",
+        "RaptorsGG": "Raptors GG",
+        "RAPTORS GG": "Raptors GG",
+        "raptors gg": "Raptors GG",
+        "Ratpors GG": "Raptors GG",
+        
+        # Thunder Esports
+        "THUNDER ESPORTS": "Thunder Esports",
+        "ThunderEsports": "Thunder Esports",
+        "thunder esports": "Thunder Esports",
+        "Thnuder Esports": "Thunder Esports",
+        "  Thunder Esports": "Thunder Esports",
+        "Thunder Esports  ": "Thunder Esports",
+        
+        # Omega Team
+        "  Omega Team": "Omega Team",
+        "OmegaTeam": "Omega Team",
+        "omega team": "Omega Team",
+        "Omgea Team": "Omega Team",
+        
+        # Titan Esports
+        "TITAN ESPORTS": "Titan Esports",
+        "TitanEsports": "Titan Esports",
+        "titan esports": "Titan Esports",
+        "Tita nEsports": "Titan Esports",
+        "  Titan Esports": "Titan Esports",
+        "Titan Esports  ": "Titan Esports",
+        
+        # Phoenix Rising
+        "PHOENIX RISING": "Phoenix Rising",
+        "PhoenixRising": "Phoenix Rising",
+        "Phoenix Risign": "Phoenix Rising",
+        "  Phoenix Rising": "Phoenix Rising",
+        "Phoenix Rising  ": "Phoenix Rising",
+        
+        # Storm Gaming
+        "StormGaming": "Storm Gaming",
+        "STORM GAMING": "Storm Gaming",
+        "storm gaming": "Storm Gaming",
+        "Stomr Gaming": "Storm Gaming",
+        "  Storm Gaming": "Storm Gaming",
+        "Storm Gaming  ": "Storm Gaming",
+        
+        # Shadow Legion
+        "ShadowLegion": "Shadow Legion",
+        "shadow legion": "Shadow Legion",
+        "Shado wLegion": "Shadow Legion",
+        "  Shadow Legion": "Shadow Legion",
+        "Shadow Legion  ": "Shadow Legion"
+    }
 }
 
-# # unidades = {
-# #         "cero": 0, "uno": 1, "dos": 2, "tres": 3,
-# #         "cuatro": 4, "cinco": 5, "seis": 6,
-# #         "siete": 7, "ocho": 8, "nueve": 9
-# #     }
 
-# # especiales = {
-# #         "diez": 10, "once": 11, "doce": 12,
-# #         "trece": 13, "catorce": 14, "quince": 15,
-# #         "dieciseis": 16, "diecisiete": 17,
-# #         "dieciocho": 18, "diecinueve": 19,
-# #         "veinte": 20
-# #     }
 
-# # decenas = {
-# #         "treinta": 30, "cuarenta": 40,
-# #         "cincuenta": 50, "sesenta": 60,
-# #         "setenta": 70, "ochenta": 80,
-# #         "noventa": 90
-# #     }
-
-# # centenas = {
-# #         "cien": 100,
-# #         "doscientos": 200,
-# #         "trescientos": 300,
-# #         "cuatrocientos": 400,
-# #         "quinientos": 500,
-# #         "seiscientos": 600,
-# #         "setecientos": 700,
-# #         "ochocientos": 800,
-# #         "novecientos": 900
-#     }
 
 def normalizar_texto(texto):
+  
     """
+    
     Normaliza un texto aplicando limpieza, corrección de tildes y formato.
 
     La función realiza varias transformaciones sobre el texto recibido:
@@ -108,8 +397,8 @@ def normalizar_texto(texto):
     palabras_corregidas = []
 
     for palabra in palabras:
-        if palabra in correcciones_tildes:
-            palabras_corregidas.append(correcciones_tildes[palabra])
+        if palabra in mapeo_tildes:
+            palabras_corregidas.append(mapeo_tildes[palabra])
         else:
             palabras_corregidas.append(palabra)
 
@@ -190,37 +479,16 @@ def limpiar_valor_numerico(valor):
         return None
     
 
-# def texto_a_numero(texto):
 
-#     palabras = texto.lower().replace("y", "").split()
-
-#     total = 0
-#     actual = 0
-
-#     for palabra in palabras:
-
-#         if palabra in unidades:
-#             actual += unidades[palabra]
-
-#         elif palabra in especiales:
-#             actual += especiales[palabra]
-
-#         elif palabra in decenas:
-#             actual += decenas[palabra]
-
-#         elif palabra in centenas:
-#             actual += centenas[palabra]
-
-#         elif palabra == "mil":
-#             if actual == 0:
-#                 actual = 1
-#             total += actual * 1000
-#             actual = 0
-
-#     return total + actual
 
 
 # print(texto_a_numero("dos mil diecinueve"))
 # print(texto_a_numero("mil novecientos noventa y nueve"))
 # precio_limpio = limpiar_valor_numerico(  '15894,58€ ' )
 # print(precio_limpio)
+
+def mapeo_equipo(euqipo_limpio, lista_mapeo):
+    it 
+    pass
+
+

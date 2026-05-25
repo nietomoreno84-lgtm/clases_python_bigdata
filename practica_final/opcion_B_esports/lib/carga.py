@@ -42,7 +42,7 @@ def cargar_csv(carpeta, nombre):
 
 
 
-def cargar_excel(carpeta, nombre):
+def cargar_excel(carpeta, nombre, hoja2=None):
     """
     Carga un archivo Excel y devuelve su contenido como una lista de diccionarios.
 
@@ -104,7 +104,10 @@ def cargar_excel(carpeta, nombre):
             Se produce si el archivo no tiene un formato Excel válido.
     """
     excel = load_workbook(f'./{carpeta}/{nombre}')
-    hoja = excel.active
+    if hoja2:
+        hoja=excel[hoja2]
+    else:    
+         hoja = excel.active
     lista = []
 
    
@@ -198,4 +201,5 @@ def pintar_datos_ficheros(fichero,lista):
     for i in range(5):
             print(lista[i])
             
-                
+
+    
