@@ -195,9 +195,11 @@ def cargar_json(carpeta, nombre):
 
 
 def pintar_datos_ficheros(fichero,lista):
+    print('-##- FUNCION PINTAR FICHEROS -##- \n------------------------------------------')
     print('Numero total de registros:', len(lista))
     print('Nombre del fichero', fichero)
     print('Nombre de los campos:', list(lista[0].keys()))
+    print('-##- PRIMEROS 5 REGISTROS -##-\n------------------------------------------')
     for i in range(5):
             print(lista[i])
             

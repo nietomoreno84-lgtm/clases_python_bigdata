@@ -1,8 +1,7 @@
-
+import csv
 from lib.limpieza import normalizar_texto
 from lib.limpieza import limpiar_valor_numerico
-
-
+from openpyxl import Workbook
 
 def procesar_equipo(lista):
     ## recorrer la lista y limpiar cada elemento de la lista. El objetivo de esta funcion es recibir una lista de datos sucia y devolverla limpia.
@@ -80,6 +79,7 @@ def cuantificacion_correciones(equipos_sucios, equipos_limpios):
     # como se recorre una lista
     contador_cambios =0     
     for i in range(len(equipos_sucios)):
+        
         if equipos_sucios[i]['nombre_equipo'] != equipos_limpios[i]['nombre_equipo']:
             contador_cambios += 1
         if equipos_sucios[i]['region'] != equipos_limpios[i]['region']:
@@ -89,5 +89,25 @@ def cuantificacion_correciones(equipos_sucios, equipos_limpios):
         if equipos_sucios[i]['presupuesto_anual'] != equipos_limpios[i]['presupuesto_anual']:
             contador_cambios += 1
         if equipos_sucios[i]['sede'] != equipos_limpios[i]['sede']:
-            contador_cambios += 1
-    return(contador_cambios)
+            contador_cambios += 1   
+        
+    return(contador_cambios),('-##- CAMBIOS REALIZADOS -##-')
+
+
+# def crear_csv(lista, nombre, carpeta):
+#     fichero = open(f"./{carpeta}/{nombre}", 'w', encoding='UTF-8', newline='')
+#     # saber las cabeceras.
+#     cabeceras = []
+#     for key in lista[0].keys():
+#         cabeceras.append(key)
+#     #volcar los datos de la lista en un objeto csv
+#     mi_csv = csv.DictWriter(fichero, fieldnames=cabeceras) 
+#     #imprimir cabeceras en la primera linea
+#     mi_csv.writeheader()
+#     # Escribir cada fila en el csv
+#     mi_csv.writerows(lista)
+#     # cerramos el fichero
+#     fichero.close()
+
+
+

@@ -4,104 +4,100 @@
 
 
 
-mapeo_tildes = {
+# mapeo_tildes = {
 
-    # — Nombres propios (personas) —
-    "Adrian":       "Adrián",
-    "Alvaro":       "Álvaro",
-    "Angel":        "Ángel",
-    "Asuncion":     "Asunción",
-    "Cesar":        "César",
-    "Encarnacion":  "Encarnación",
-    "Ines":         "Inés",
-    "Ivan":         "Iván",
-    "Jose":         "José",
-    "Lucia":        "Lucía",
-    "Monica":       "Mónica",
-    "Nicolas":      "Nicolás",
-    "Noemi":        "Noemí",
-    "Oscar":        "Óscar",
-    "Raul":         "Raúl",
-    "Rocio":        "Rocío",
-    "Ruben":        "Rubén",
-    "Tomas":        "Tomás",
-    "Valentin":     "Valentín",
-    "Veronica":     "Verónica",
-    "Victor":       "Víctor",
+#     # — Nombres propios (personas) —
+#     "Adrian":       "Adrián",
+#     "Alvaro":       "Álvaro",
+#     "Angel":        "Ángel",
+#     "Asuncion":     "Asunción",
+#     "Cesar":        "César",
+#     "Encarnacion":  "Encarnación",
+#     "Ines":         "Inés",
+#     "Ivan":         "Iván",
+#     "Jose":         "José",
+#     "Lucia":        "Lucía",
+#     "Monica":       "Mónica",
+#     "Nicolas":      "Nicolás",
+#     "Noemi":        "Noemí",
+#     "Oscar":        "Óscar",
+#     "Raul":         "Raúl",
+#     "Rocio":        "Rocío",
+#     "Ruben":        "Rubén",
+#     "Tomas":        "Tomás",
+#     "Valentin":     "Valentín",
+#     "Veronica":     "Verónica",
+#     "Victor":       "Víctor",
 
-    # — Apellidos —
-    "Alvarez":      "Álvarez",
-    "Angeles":      "Ángeles",
-    "Benitez":      "Benítez",
-    "Calderon":     "Calderón",
-    "Cordoba":      "Córdoba",
-    "Cortes":       "Cortés",
-    "Diaz":         "Díaz",
-    "Dominguez":    "Domínguez",
-    "Duran":        "Durán",
-    "Exposito":     "Expósito",
-    "exposito":     "expósito",
-    "Fernandez":    "Fernández",
-    "Garcia":       "García",
-    "Gimenez":      "Giménez",
-    "Giron":        "Girón",
-    "Gomez":        "Gómez",
-    "Gutierrez":    "Gutiérrez",
-    "Hernandez":    "Hernández",
-    "Ibanez":       "Ibáñez",
-    "Jimenez":      "Jiménez",
-    "Leon":         "León",
-    "Lopez":        "López",
-    "Marin":        "Marín",
-    "Martinez":     "Martínez",
-    "Mendez":       "Méndez",
-    "Millan":       "Millán",
-    "Munoz":        "Muñoz",
-    "Nunez":        "Núñez",
-    "Pena":         "Peña",
-    "Perez":        "Pérez",
-    "Rios":         "Ríos",
-    "Roldan":       "Roldán",
-    "Saez":         "Sáez",
-    "Sanchez":      "Sánchez",
-    "Suarez":       "Suárez",
-    "Vazquez":      "Vázquez",
+#     # — Apellidos —
+#     "Alvarez":      "Álvarez",
+#     "Angeles":      "Ángeles",
+#     "Benitez":      "Benítez",
+#     "Calderon":     "Calderón",
+#     "Cordoba":      "Córdoba",
+#     "Cortes":       "Cortés",
+#     "Diaz":         "Díaz",
+#     "Dominguez":    "Domínguez",
+#     "Duran":        "Durán",
+#     "Exposito":     "Expósito",
+#     "exposito":     "expósito",
+#     "Fernandez":    "Fernández",
+#     "Garcia":       "García",
+#     "Gimenez":      "Giménez",
+#     "Giron":        "Girón",
+#     "Gomez":        "Gómez",
+#     "Gutierrez":    "Gutiérrez",
+#     "Hernandez":    "Hernández",
+#     "Ibanez":       "Ibáñez",
+#     "Jimenez":      "Jiménez",
+#     "Leon":         "León",
+#     "Lopez":        "López",
+#     "Marin":        "Marín",
+#     "Martinez":     "Martínez",
+#     "Mendez":       "Méndez",
+#     "Millan":       "Millán",
+#     "Munoz":        "Muñoz",
+#     "Nunez":        "Núñez",
+#     "Pena":         "Peña",
+#     "Perez":        "Pérez",
+#     "Rios":         "Ríos",
+#     "Roldan":       "Roldán",
+#     "Saez":         "Sáez",
+#     "Sanchez":      "Sánchez",
+#     "Suarez":       "Suárez",
+#     "Vazquez":      "Vázquez",
 
-    # — Ciudades / regiones —
-    "Berlin":           "Berlín",
-    "Bogota":           "Bogotá",
-    "Latinoamerica":    "Latinoamérica",
-    "Mexico":           "México",
-    "Norteamerica":     "Norteamérica",
-    "Paris":            "París",
-    "Peru":             "Perú",
-    "Sao":              "São",
-    "Seul":             "Seúl",
+#     # — Ciudades / regiones —
+#     "Berlin":           "Berlín",
+#     "Bogota":           "Bogotá",
+#     "Latinoamerica":    "Latinoamérica",
+#     "Mexico":           "México",
+#     "Norteamerica":     "Norteamérica",
+#     "Paris":            "París",
+#     "Peru":             "Perú",
+#     "Sao":              "São",
+#     "Seul":             "Seúl",
 
-    # — Vocabulario general (roles, cargos, palabras comunes) —
-    "Edicion":      "Edición",
-    "Espana":       "España",
-    "espana":       "españa",
-    "Lider":        "Líder",
-    "Manager":      "Mánager",
-    "Psicologo":    "Psicólogo",
-    "septimo":      "séptimo",
-    "Triton":       "Tritón",
-    "Vertigo":      "Vértigo",
-}
+#     # — Vocabulario general (roles, cargos, palabras comunes) —
+#     "Edicion":      "Edición",
+#     "Espana":       "España",
+#     "espana":       "españa",
+#     "Lider":        "Líder",
+#     "Manager":      "Mánager",
+#     "Psicologo":    "Psicólogo",
+#     "septimo":      "séptimo",
+#     "Triton":       "Tritón",
+#     "Vertigo":      "Vértigo",
+# }
 # DICCIONARIO MAESTRO DE MAPEO CONSOLIDADO
 mapeo_master = {
-    # --- MAPEO DE MESES ---
-    "meses": {
+
         "enero": 1, "febrero": 2, "marzo": 3, "abril": 4,
         "mayo": 5, "junio": 6, "julio": 7, "agosto": 8,
         "septiembre": 9, "octubre": 10, "noviembre": 11, "diciembre": 12,
         "jan": 1, "feb": 2, "mar": 3, "apr": 4, "may": 5, "jun": 6,
-        "jul": 7, "aug": 8, "sep": 9, "oct": 10, "nov": 11, "dec": 12
-    },
-
-    # --- MAPEO DE REGIONES ---
-    "region": {
+        "jul": 7, "aug": 8, "sep": 9, "oct": 10, "nov": 11, "dec": 12,
+  
         "asia": "Asia",
         "ASIA": "Asia",
         "eu": "Europa",
@@ -112,26 +108,18 @@ mapeo_master = {
         "latinoamerica": "Latinoamérica",
         "Latinoamerica": "Latinoamérica",
         "norteamerica": "Norteamérica",
-        "NORTEAMERICA": "Norteamérica"
-    },
+        "NORTEAMERICA": "Norteamérica",
 
-    # --- MAPEO DE AÑOS DE FUNDACIÓN ---
-    "anios_fundacion": {
+
         "dos mil diecinueve": "2019",
         "dos mil veinte": "2020",
-        "2031": "2021"
-    },
+        "2031": "2021",
 
-    # --- MAPEO DE PRESUPUESTOS ---
-    "presupuesto_anual": {
         "1,609,517": "1609517",
         "1,869,817": "1869817",
         "1611336.00": "1611336",
-        "1844733.00": "1844733"
-    },
+        "1844733.00": "1844733",
 
-    # --- MAPEO DE PAÍSES ---
-    "pais": {
         "ARGENTINA": "Argentina",
         "argentina": "Argentina",
         "Argetina": "Argentina",
@@ -165,11 +153,10 @@ mapeo_master = {
         "Mejico": "México",
         "PORTUGAL": "Portugal",
         "SUECIA": "Suecia",
-        "Sweden": "Suecia"
-    },
-
-    # --- MAPEO DE ROLES ---
-    "rol": {
+        "Sweden": "Suecia",
+        "Latinoamerica": "Latinoamérica",
+        "Norteamerica" : "Norteamérica",
+   
         "SUPPORT": "Support",
         "support": "Support",
         "Soporte": "Support",
@@ -198,136 +185,162 @@ mapeo_master = {
         "lurker": "Lurker",
         "AWPER": "AWPer",
         "awper": "AWPer",
-        "Sniper": "AWPer"
-    },
-
-    # --- MAPEO DE EQUIPOS (CONSOLIDADO Y UNIFICADO) ---
-    "equipo": {
-        # Blaze Team
+        "Sniper": "AWPer",
         "  Blaze Team": "Blaze Team",
         "BLAZE TEAM": "Blaze Team",
         "Blaze Team  ": "Blaze Team",
         "Blaze eTam": "Blaze Team",
         "BlazeTeam": "Blaze Team",
         "blaze team": "Blaze Team",
-        
-        # Byte Force
         "  Byte Force": "Byte Force",
         "BYTE FORCE": "Byte Force",
         "Byte Force  ": "Byte Force",
         "Byet Force": "Byte Force",
         "ByteForce": "Byte Force",
         "byte force": "Byte Force",
-        
-        # Cyber Dragons
         "  Cyber Dragons": "Cyber Dragons",
         "CYBER DRAGONS": "Cyber Dragons",
         "Cyber Dragons  ": "Cyber Dragons",
         "CyberDragons": "Cyber Dragons",
         "cyber dragons": "Cyber Dragons",
         "CyberD ragons": "Cyber Dragons",
-        
-        # Crystal Gaming
         "Crystal Gaming  ": "Crystal Gaming",
         "CRYSTAL GAMING": "Crystal Gaming",
         "Crystal Gamnig": "Crystal Gaming",
         "CrystalGaming": "Crystal Gaming",
         "crystal gaming": "Crystal Gaming",
-        
-        # Dark Wolves
         "Dark Wolves  ": "Dark Wolves",
         "Dar kWolves": "Dark Wolves",
         "dark wolves": "Dark Wolves",
         "DARK WOLVES": "Dark Wolves",
-        
-        # Eclipse
         "ECLIPSE": "Eclipse",
         "Eclipse  ": "Eclipse",
         "Eclpise": "Eclipse",
-        
-        # Iron Bears
         "Iron Baers": "Iron Bears",
         "Iron Bears  ": "Iron Bears",
         "IronBears": "Iron Bears",
-        
-        # Neon Strikers
         "NEON STRIKERS": "Neon Strikers",
         "NeonStrikers": "Neon Strikers",
         "neon strikers": "Neon Strikers",
         "Neon Srtikers": "Neon Strikers",
         "  Neon Strikers": "Neon Strikers",
         "Neon Strikers  ": "Neon Strikers",
-        
-        # Nova Squad
         "NOVA SQUAD": "Nova Squad",
         "Nova Squad  ": "Nova Squad",
         "Noav Squad": "Nova Squad",
         "nova squad": "Nova Squad",
         "NovaSquad": "Nova Squad",
         "  Nova Squad": "Nova Squad",
-        
-        # Quantum Five
         "  Quantum Five": "Quantum Five",
         "QUANTUM FIVE": "Quantum Five",
-        
-        # Arctic Foxes
         "ARCTIC FOXES": "Arctic Foxes",
         "Arctic Foxes  ": "Arctic Foxes",
         "Arctic Fxoes": "Arctic Foxes",
         "ArcticFoxes": "Arctic Foxes",
         "arctic foxes": "Arctic Foxes",
-        
-        # Raptors GG
         "  Raptors GG": "Raptors GG",
         "RaptorsGG": "Raptors GG",
         "RAPTORS GG": "Raptors GG",
         "raptors gg": "Raptors GG",
         "Ratpors GG": "Raptors GG",
-        
-        # Thunder Esports
         "THUNDER ESPORTS": "Thunder Esports",
         "ThunderEsports": "Thunder Esports",
         "thunder esports": "Thunder Esports",
         "Thnuder Esports": "Thunder Esports",
         "  Thunder Esports": "Thunder Esports",
         "Thunder Esports  ": "Thunder Esports",
-        
-        # Omega Team
         "  Omega Team": "Omega Team",
         "OmegaTeam": "Omega Team",
         "omega team": "Omega Team",
         "Omgea Team": "Omega Team",
-        
-        # Titan Esports
         "TITAN ESPORTS": "Titan Esports",
         "TitanEsports": "Titan Esports",
         "titan esports": "Titan Esports",
         "Tita nEsports": "Titan Esports",
         "  Titan Esports": "Titan Esports",
         "Titan Esports  ": "Titan Esports",
-        
-        # Phoenix Rising
         "PHOENIX RISING": "Phoenix Rising",
         "PhoenixRising": "Phoenix Rising",
         "Phoenix Risign": "Phoenix Rising",
         "  Phoenix Rising": "Phoenix Rising",
         "Phoenix Rising  ": "Phoenix Rising",
-        
-        # Storm Gaming
         "StormGaming": "Storm Gaming",
         "STORM GAMING": "Storm Gaming",
         "storm gaming": "Storm Gaming",
         "Stomr Gaming": "Storm Gaming",
         "  Storm Gaming": "Storm Gaming",
         "Storm Gaming  ": "Storm Gaming",
-        
-        # Shadow Legion
         "ShadowLegion": "Shadow Legion",
         "shadow legion": "Shadow Legion",
         "Shado wLegion": "Shadow Legion",
         "  Shadow Legion": "Shadow Legion",
-        "Shadow Legion  ": "Shadow Legion"
-    }
+        "Shadow Legion  ": "Shadow Legion",
+        "Adrian":       "Adrián",
+        "Alvaro":       "Álvaro",
+        "Angel":        "Ángel",
+        "Asuncion":     "Asunción",
+        "Cesar":        "César",
+        "Encarnacion":  "Encarnación",
+        "Ines":         "Inés",
+        "Ivan":         "Iván",
+        "Jose":         "José",
+        "Lucia":        "Lucía",
+        "Monica":       "Mónica",
+        "Nicolas":      "Nicolás",
+        "Noemi":        "Noemí",
+        "Oscar":        "Óscar",
+        "Raul":         "Raúl",
+        "Rocio":        "Rocío",
+        "Ruben":        "Rubén",
+        "Tomas":        "Tomás",
+        "Valentin":     "Valentín",
+        "Veronica":     "Verónica",
+        "Victor":       "Víctor",
+        "Alvarez":      "Álvarez",
+        "Angeles":      "Ángeles",
+        "Benitez":      "Benítez",
+        "Calderon":     "Calderón",
+        "Cordoba":      "Córdoba",
+        "Cortes":       "Cortés",
+        "Diaz":         "Díaz",
+        "Dominguez":    "Domínguez",
+        "Duran":        "Durán",
+        "Exposito":     "Expósito",
+        "exposito":     "expósito",
+        "Fernandez":    "Fernández",
+        "Garcia":       "García",
+        "Gimenez":      "Giménez",
+        "Giron":        "Girón",
+        "Gomez":        "Gómez",
+        "Gutierrez":    "Gutiérrez",
+        "Hernandez":    "Hernández",
+        "Ibanez":       "Ibáñez",
+        "Jimenez":      "Jiménez",
+        "Leon":         "León",
+        "Lopez":        "López",
+        "Marin":        "Marín",
+        "Martinez":     "Martínez",
+        "Mendez":       "Méndez",
+        "Millan":       "Millán",
+        "Munoz":        "Muñoz",
+        "Nunez":        "Núñez",
+        "Pena":         "Peña",
+        "Perez":        "Pérez",
+        "Rios":         "Ríos",
+        "Roldan":       "Roldán",
+        "Saez":         "Sáez",
+        "Sanchez":      "Sánchez",
+        "Suarez":       "Suárez",
+        "Vazquez":      "Vázquez",
+        "Edicion":      "Edición",
+        "Espana":       "España",
+        "espana":       "españa",
+        "Lider":        "Líder",
+        "Manager":      "Mánager",
+        "Psicologo":    "Psicólogo",
+        "septimo":      "séptimo",
+        "Triton":       "Tritón",
+        "Vertigo":      "Vértigo",
 }
 
 
@@ -397,8 +410,8 @@ def normalizar_texto(texto):
     palabras_corregidas = []
 
     for palabra in palabras:
-        if palabra in mapeo_tildes:
-            palabras_corregidas.append(mapeo_tildes[palabra])
+        if palabra in mapeo_master:
+            palabras_corregidas.append(mapeo_master[palabra])
         else:
             palabras_corregidas.append(palabra)
 
@@ -487,8 +500,5 @@ def limpiar_valor_numerico(valor):
 # precio_limpio = limpiar_valor_numerico(  '15894,58€ ' )
 # print(precio_limpio)
 
-def mapeo_equipo(euqipo_limpio, lista_mapeo):
-    it 
-    pass
 
 
