@@ -21,14 +21,14 @@ FICHERO: partidas.json
 Total de registros procesados: 405
 Registros duplicados eliminados: 6
   • Total de valores vacíos gestionados: 17
-  • Total de celdas modificadas/corregidas: 1808
+  • Total de celdas modificadas/corregidas: 1699
 
 FICHERO: premios.csv
 --------------------------------------------------
 Total de registros procesados: 158
 Registros duplicados eliminados: 5
   • Total de valores vacíos gestionados: 8
-  • Total de celdas modificadas/corregidas: 879
+  • Total de celdas modificadas/corregidas: 853
 
 ==================================================
 Fin del informe.
