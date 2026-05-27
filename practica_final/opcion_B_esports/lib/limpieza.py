@@ -341,6 +341,16 @@ mapeo_master = {
         "septimo":      "séptimo",
         "Triton":       "Tritón",
         "Vertigo":      "Vértigo",
+        "2026-s1":      "Primera",
+         "2025-s2":     "Segunda",
+         "2"    :       "Segunda",
+         "1":           "Primera",
+         "Edición 1":   "Primera",
+         "N/a":         "Sin datos",
+         "3":           "Tercera",
+         "s2":          "Segunda",
+         "s1":          "Primera"
+
 }
 
 
@@ -483,7 +493,7 @@ def limpiar_valor_numerico(valor):
     lista_monedas = ['€', '$']
     if not valor: 
         return 0.0
-    precio_txt = str(valor).strip().replace(',', '').replace('.','').lower()
+    precio_txt = str(valor).strip().replace(',', '').replace('.','').lower().replace('-', '').lower().replace(' -', '').lower()
     for moneda in lista_monedas:
         precio_txt = precio_txt.replace(moneda, '')
     try:

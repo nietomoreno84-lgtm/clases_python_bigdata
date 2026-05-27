@@ -1,0 +1,34 @@
+==================================================
+         INFORME DE LIMPIEZA - CYBERLEAGUE        
+==================================================
+
+FICHERO: equipos.xlsx
+--------------------------------------------------
+Total de registros procesados: 20
+Registros duplicados eliminados: 0
+  • Total de valores vacíos gestionados: 1
+  • Total de celdas modificadas/corregidas: 0
+
+FICHERO: jugadores.csv
+--------------------------------------------------
+Total de registros procesados: 200
+Registros duplicados eliminados: 0
+  • Total de valores vacíos gestionados: 4
+  • Total de celdas modificadas/corregidas: 0
+
+FICHERO: partidas.json
+--------------------------------------------------
+Total de registros procesados: 405
+Registros duplicados eliminados: 6
+  • Total de valores vacíos gestionados: 17
+  • Total de celdas modificadas/corregidas: 1808
+
+FICHERO: premios.csv
+--------------------------------------------------
+Total de registros procesados: 158
+Registros duplicados eliminados: 5
+  • Total de valores vacíos gestionados: 8
+  • Total de celdas modificadas/corregidas: 879
+
+==================================================
+Fin del informe.
