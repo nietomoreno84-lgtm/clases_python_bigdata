@@ -3,6 +3,9 @@ from lib.limpieza import normalizar_texto
 from lib.limpieza import limpiar_valor_numerico
 from openpyxl import Workbook
 
+#FUNCIONES PARA PROCESAR LOS FICHEROS
+
+
 def procesar_equipo(lista):
     ## recorrer la lista y limpiar cada elemento de la lista. El objetivo de esta funcion es recibir una lista de datos sucia y devolverla limpia.
     lista_limpia = []
@@ -308,6 +311,10 @@ def procesar_premios(lista):
 
 # def cuantificacion_correciones(equipos_sucios, equipos_limpios):
   
+
+ #FUNCION PARA CUANTIFICAR ERRORES
+
+
 def cuantificacion_correciones(lista_sucia, lista_limpia):
     """
     Cuenta la cantidad de cambios realizados entre una lista original
@@ -390,6 +397,9 @@ def cuantificacion_correciones(lista_sucia, lista_limpia):
                  contador_cambios += 1
                 
     return contador_cambios
+
+
+#FUNCION PARA HACER LA AUDITORIA
 
 
 def hacer_auditoria(lista_registros, nombre_fichero):

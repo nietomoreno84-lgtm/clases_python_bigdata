@@ -2,7 +2,7 @@ torneo,edicion,equipo,posicion,premio_eur,fecha
 Copa nac.,Segunda,Shadow Legion,,5112.0,
 Cyber league Segunda,Segunda,Phoenix Rising,,2726.0,
 Copa nacional,Tercera,Thunder Esports,2.0,24942.0,20260723.0
-Master series,2025-s1,Thunder Esports,,52263.0,
+Master series,Primera,Thunder Esports,,52263.0,
 Copa nacional,Tercera,Blaze Team,,24870.0,
 Masters,Segunda,Shadow Legion,,19279.0,
 Grand finals,Segunda,Phoenix Rising,,27014.0,
@@ -11,7 +11,7 @@ Grand finals,Segunda,Zenith,,52405.0,
 Cyberleague Primera,Primera,Byet Force,,18718.0,
 Cyberleague Primera,Primera,Crystal Gaming,8.0,3001.0,
 Cyberleague Segunda,Segunda,Zenith,,19017.0,
-Masters,2025-s1,Phoenix Rising,,50756.0,27092026.0
+Masters,Primera,Phoenix Rising,,50756.0,27092026.0
 Grand finals,Tercera,Thunder Esports,,9934.0,
 Copa nacional,Primera,Titan Esports,,7718.0,
 Copa nacional,Primera,Noav Squad,,12465.0,
@@ -23,7 +23,7 @@ Masters,Sin datos,Zenith,,17018.0,
 Gran final,Edición Segunda,Nova Squad,4.0,11438.0,0.0
 Cyber league Segunda,Segunda,Arctic Foxes,4.0,14254.0,
 Cyberleague temporada Primera,Segunda,Vortex Club,,26547.0,
-Grand finals,2025-s1,Arctic Foxes,,25777.0,
+Grand finals,Primera,Arctic Foxes,,25777.0,
 Open Qualifier,Segunda,Quantum Five,8.0,5891.0,
 Copa nacional,Edición Primera,Iron Bears,,4886.0,
 Copa nac.,Edición Segunda,Thunder Esports,4.0,0.0,
@@ -31,21 +31,21 @@ Cyberleague Segunda,Edición Segunda,Byet Force,,26397.0,21112025.0
 Cyberleague Segunda,Sin datos,Iron Bears,,4236.0,3052025.0
 Masters series,Edición Segunda,Titan Esports,,51232.0,
 Cyber league Segunda,Segunda,Blaze Team,8.0,824.0,13052025.0
-Copa nacional,2025-s1,Storm Gaming,8.0,1097.0,20102026.0
+Copa nacional,Primera,Storm Gaming,8.0,1097.0,20102026.0
 Copa nacional,Sin datos,Byte Force,7.0,5644.0,2112026.0
-Grand finals,2025-s1,Zenith,,945.0,
-Open Qualifier,2025-s1,Storm Gaming,7.0,5892.0,20260128.0
-Copa nac.,2025-s1,Storm Gaming,,13879.0,
+Grand finals,Primera,Zenith,,945.0,
+Open Qualifier,Primera,Storm Gaming,7.0,5892.0,20260128.0
+Copa nac.,Primera,Storm Gaming,,13879.0,
 Grand finals,Segunda,Titan Esports,,5065.0,
 Copa nacional,Segunda,Thunder Esports,,25901.0,
 Cyberleague temporada Segunda,Edición Primera,Eclipse,,4913.0,18092025.0
 Copa nacional,Edición Segunda,Cyber Dragons,,4882.0,2072026.0
-Open Qualifier,2025-s1,Neon Strikers,,5340.0,20261020.0
+Open Qualifier,Primera,Neon Strikers,,5340.0,20261020.0
 Cyberleague Primera,Tercera,Titan Esports,,5054.0,
 Cyberleague Segunda,Primera,Dark Wolves,,13026.0,
 Copa nacional,Primera,Titan Esports,,3424.0,
 Masters,Tercera,Phoenix Rising,1.0,51559.0,20260526.0
-Master series,2025-s1,Eclipse,,2943.0,
+Master series,Primera,Eclipse,,2943.0,
 Masters,Segunda,Nova Squad,4.0,14100.0,
 Copa nacional,Segunda,Iron Bears,3.0,16363.0,20260328.0
 Cyberleague Primera,Tercera,Byte Force,,4569.0,20260513.0
@@ -64,7 +64,7 @@ Copa nac.,Segunda,Storm Gaming,,8541.0,
 Copa nac.,Primera,Shadow Legion,,3392.0,
 Copa nacional,Primera,Storm Gaming,,10139.0,
 Open,Primera,Blaze Team,8.0,5917.0,
-Cyberleague Season Primera,2025-s1,Quantum Five,,15958.0,
+Cyberleague Season Primera,Primera,Quantum Five,,15958.0,
 Cyberleague temporada Segunda,Primera,Raptors GG,,14548.0,
 Copa nacional,Primera,Crystal Gaming,,27467.0,20251008.0
 Copa nacional,Primera,Eclipse,,7159.0,
@@ -80,7 +80,7 @@ Copa nacional,Primera,Omega Team,8.0,3401.0,
 Copa nacional,Segunda,Iron Bears,,10253.0,
 Open Qualifier,Primera,Byte Force,,17152.0,20261224.0
 Masters,Primera,Arctic Foxes,1.0,52040.0,
-Cyberleague Primera,2025-s1,Phoenix Rising,,6370.0,
+Cyberleague Primera,Primera,Phoenix Rising,,6370.0,
 Open,Primera,Thunder Esports,,4625.0,
 Open Qualifier,Tercera,Titan Esports,7.0,0.0,5122025.0
 Master series,Primera,Omgea Team,,7566.0,26032025.0
@@ -90,15 +90,15 @@ Grand finals,Tercera,Darkwolves,,29289.0,
 Cyberleague Primera,Segunda,Raptors GG,,50569.0,
 Grand finals,Segunda,Titan Esports,7.0,4574.0,
 Copa nacional,Segunda,Omega Team,,26322.0,6062026.0
-Copa nac.,2025-s1,Noav Squad,,7434.0,
-Cyberleague Segunda,2025-s1,Darkwolves,,51107.0,
+Copa nac.,Primera,Noav Squad,,7434.0,
+Cyberleague Segunda,Primera,Darkwolves,,51107.0,
 Cyberleague Segunda,Edición Primera,Blaze Team,,19460.0,20250511.0
 Master series,Segunda,Omega Team,,5402.0,
 Masters series,Primera,Blaze Team,,2097.0,
 Masters series,Primera,Shadow Legion,,3270.0,
 Copa nacional,Primera,Storm Gaming,,10139.0,
 Cyberleague Segunda,Primera,Byte Force,,5668.0,
-Grand final,2025-s1,Quantum Five,,12364.0,15092025.0
+Grand final,Primera,Quantum Five,,12364.0,15092025.0
 Cyberleague Segunda,Edición Segunda,Byte Force,,26397.0,21112025.0
 Cyberleague Primera,Edición Segunda,Shadow Legion,6.0,7342.0,
 Cyberleague Primera,Primera,Neon Strikers,,5048.0,
@@ -107,7 +107,7 @@ Open Qualifier,Segunda,Raptors GG,,9630.0,
 Copa nacional,Segunda,Omgea Team,,3230.0,
 Grand finals,Primera,Sin datos,,2861.0,
 Cyber league Segunda,Edición Primera,Vortex Club,1.0,51752.0,21032025.0
-Cyberleague Segunda,2025-s1,Quantum Five,,53922.0,1042025.0
+Cyberleague Segunda,Primera,Quantum Five,,53922.0,1042025.0
 Masters,Segunda,Nova Squad,4.0,14100.0,
 Open Qualifier,Segunda,Neon Strikers,,28585.0,
 Grand finals,Segunda,Raptors GG,,29784.0,
@@ -131,10 +131,10 @@ Cyberleague Season Primera,Primera,Phoenix Rising,,5842.0,20250211.0
 Grand finals,Segunda,Blaze Team,,5065.0,
 Open Qualifier,Edición Segunda,Neon Strikers,,8754.0,
 Cyber league Primera,Primera,Iron Bears,,16716.0,
-Cyberleague Season Primera,2025-s1,Quantum Five,,15958.0,
+Cyberleague Season Primera,Primera,Quantum Five,,15958.0,
 Open Qualifier,Primera,Titan Esports,,3039.0,20260706.0
 Copa nacional,Edición Segunda,Cyber Dragons,,4882.0,2072026.0
-Open Qualifier,2025-s1,Crystal Gaming,,16271.0,
+Open Qualifier,Primera,Crystal Gaming,,16271.0,
 Copa nac.,Primera,Thunder Esports,4.0,14729.0,
 Masters series,Primera,Cyber Dragons,7.0,5613.0,
 Masters series,Primera,Blaze Team,,2097.0,

@@ -2,6 +2,7 @@ import csv
 from openpyxl import load_workbook
 import json
 
+# FUNCION PARA CARGAR CSV
 
 def cargar_csv(carpeta, nombre):
     """
@@ -40,7 +41,7 @@ def cargar_csv(carpeta, nombre):
     fichero.close()
     return lista
 
-
+# FUNCION PARA CARGAR EXCEL
 
 def cargar_excel(carpeta, nombre, hoja2=None):
     """
@@ -123,6 +124,7 @@ def cargar_excel(carpeta, nombre, hoja2=None):
     return lista
 
 
+#FUNCION PARA CARGAR JSON
 
 def cargar_json(carpeta, nombre):
     """
@@ -193,6 +195,8 @@ def cargar_json(carpeta, nombre):
     except FileNotFoundError:
         print('Archivo o carpeta no encontrado')
 
+
+#FUNCION PARA PINTAR EN TERMINAL LOS ARCHIVOS SUCIOS
 
 def pintar_datos_ficheros(fichero,lista):
     print('-##- FUNCION PINTAR FICHEROS -##- \n------------------------------------------')

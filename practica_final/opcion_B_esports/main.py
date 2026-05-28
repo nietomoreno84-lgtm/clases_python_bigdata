@@ -27,6 +27,8 @@ premios_limpio = procesar_premios(premios_sucio)
 jugadores_limpio = procesar_jugadores(jugadores_sucios)
 partidas_limpio = procesar_partidas(partidas_sucios)
 
+# VARIABLES DE CORRECCIONES
+
 
 numero_correciones_equipos = cuantificacion_correciones(equipos_sucios, equipos_limpios)
 numero_correciones_jugadores = cuantificacion_correciones(jugadores_sucios,jugadores_limpio)
@@ -47,7 +49,7 @@ crear_excel('datos_limpios', 'Datos_completo.xlsx',premios_limpio,'premios' )
 
 
 
-# VARIABLES PARA AUDITORIA
+# VARIABLES PARA AUDITORIA Y GENERACION DE IMFORME DE LIMPIEZA
 
 auditoria = {
     "equipos.xlsx": hacer_auditoria(equipos_sucios, "equipos.xlsx"),

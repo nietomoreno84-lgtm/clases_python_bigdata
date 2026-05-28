@@ -54,6 +54,7 @@ mapeo_master  = {
 
     "2026-s1": "Primera",
     "2025-s2": "Segunda",
+    "2025-s1": "Primera",
 
     "1": "Primera",
     "2": "Segunda",
@@ -406,7 +407,7 @@ mapeo_master  = {
 }
 
 
-
+#FUNCIONES PARA LIMPIAR TEXTO
 
 def normalizar_texto(texto):
   
@@ -541,7 +542,7 @@ def limpiar_texto(valor, mayusculas = False):
     valor = str(valor).strip()
     return valor.upper() if mayusculas else valor.lower()
 
-
+#FUNCION PARA LIMPIAR VALORES NUMERICOS
 
 def limpiar_valor_numerico(valor):
     lista_monedas = ['€', '$']
