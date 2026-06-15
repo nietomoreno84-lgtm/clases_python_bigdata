@@ -278,5 +278,7 @@ book_update = {
     'editorial_id': 1
 }
 
-result = update_book(book_update)
-print(result)
+# result = update_book(book_update)
+# print(result)
+
+
