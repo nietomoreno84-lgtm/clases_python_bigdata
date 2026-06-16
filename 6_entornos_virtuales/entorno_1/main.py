@@ -19,7 +19,7 @@ def obtener_temperatura(ciudad):
     humedad = data['current_condition'][0]['humidity']
     descripcion = data['current_condition'][0]['weatherDesc'][0]['value']
     color = Fore.BLUE if float(temperatura) < 25 else Fore.RED
-    temperatura_color = color + str(temperatura)
+    temperatura_color = color + str(temperatura) 
     
     print(f"La temperatura de {ciudad.title()} es {temperatura_color} ºC {Fore.RESET}, el porcentaje de humedad es de {humedad}% y el día en general es {descripcion}")
     
