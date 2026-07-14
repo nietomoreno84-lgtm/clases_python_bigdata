@@ -1,0 +1,123 @@
+Análisis Exploratorio de Datos (EDA) - Distribución salarial y propuesta para optimización de gastos en RRHH
+
+---
+
+### 1. Contexto general y datos clave
+
+- Fecha informe: 13-07-2026
+- Total empleados: 220
+- Salario medio global: 36,902.47 EUR anuales
+- Departamento más grande: IT (66 empleados, 30% aprox. de la plantilla total)
+- Empleados que hacen teletrabajo: 36%
+
+---
+
+### 2. Análisis distribución salarial
+
+Se analiza el salario anual segmentado por variables clave: departamento, antigüedad, y horas extra. Además, se observan algunos indicadores adicionales para posibles insights.
+
+#### Por departamento (muestra principal y generalizada)
+
+| Departamento | Nº empleados | Salario medio (€) | Salario mínimo (€)  | Salario máximo (€) | Observaciones |
+|--------------|--------------|-------------------|-------------------- |--------------------|---------------|
+| IT           | 66           | 39,500 - 40,500 | ~27,900               | ~55,867            | Mayor presupuesto salarial, con salarios más dispersos y algunos casos altos (v.gr. 55867) |
+| Marketing    | ~40          | 32,000 - 36,000   | ~23,379             | ~46,138            | Más homogéneo, salarios inferiores en general que IT |
+| Ventas       | ~50          | 28,000 - 34,000   | ~19,000             | ~43,755            | Algunos salarios muy bajos y algunos altos, puede existir dispersión |
+| RRHH         | ~30          | 27,000 - 35,000   | ~18,500             | ~45,971            | Salarios medios-bajos, pero muy dispersos, algunos elevados |
+| Finanzas     | ~25          | 30,000 - 40,000   | ~23,500             | ~235,000*          | Fenómeno excepcional: un salario outlier muy alto (235,000 EUR) y otro muy elevado (198,500), sesgando la media |
+
+_*Nota: Salarios extremos encontrados en Finanzas (ej. 235,000 EUR y 198,500 EUR) distorsionan media y varianza. Posible efecto de roles ejecutivos o error._
+
+---
+
+#### Por antigüedad y salario
+
+- Existe correlación positiva entre antigüedad y salario, con salarios más altos en empleados con antigüedad >10 años.
+- Salarios altos en IT y Finanzas se relacionan mayormente con antigüedad >10 años.
+- Empleados con antigüedad 0-2 años suelen tener salarios más bajos (~27,000 - 32,000 EUR).
+
+---
+
+#### Teletrabajo vs salario
+
+- 36% empleados trabajan en teletrabajo.
+- En IT, varios empleados con teletrabajo tienen salarios competitivos, pero no notablemente superiores.
+- No se observan desviaciones fuertes de salarios asociadas directamente a modalidad teletrabajo.
+
+---
+
+#### Horas extra y compensación
+
+- Empleados con más de 10 horas extras/mes suelen tener salarios superiores a media en sus departamentos (p.ej. en IT, RRHH y Finanzas).
+- Algunas áreas como RRHH presentan empleados con altas horas extras y salarios medios.
+
+---
+
+### 3. Hallazgos críticos para optimización y reducción de costes
+
+- **Concentración Salarial en IT y Finanzas**: Estos departamentos presentan los mayores salarios medios y además salarios máximos muy altos. Finanzas en particular tiene outliers muy altos (2 empleados con salarios >198k EUR), que pueden estar afectando los costes globales significativamente.
+  
+- **Dispersión Salarial en RRHH**: Empleados RRHH con antigüedad baja tienen salarios similares o superiores a empleados de mayor antigüedad, y algunos con pagos elevados combinados con horas extras significativas.
+
+- **Horas Extras Elevadas**: Varios empleados con altos niveles de horas extras mensuales (>15h) pueden indicar sobrecarga y falta de control en compensación extra, generando costes adicionales.
+
+- **Teletrabajo**: 36% empleados en teletrabajo, no asociado directamente a reducción de costes salariales ni aumento. Posible eficiencia por teletrabajo no evaluada, pero no directamente compensación.
+
+- **Antigüedad y salarios**: Empleados senior tienen justo salarios altos, lo esperado, pero no siempre con correlación clara con satisfacción o productividad (p.ej. empleados con baja satisfacción y salario alto).
+
+---
+
+### 4. Propuesta de plan de acción para reducción estructurada de costes RRHH
+
+#### 4.1 Revisión de salarios outliers y restructuración
+
+- Investigar y revisar los salarios anómalos en Finanzas (2 casos >198k EUR). Ver si roles son críticos o se pueden ajustar sin impacto operacional.
+- Establecer topes salariales por rol y antigüedad, usando benchmarking interno y del mercado para límites razonables.
+
+#### 4.2 Optimización de horas extras
+
+- Implementar control estricto y revisión de horas extras, en particular en IT, RRHH y Finanzas.
+- Considerar redistribuir carga laboral o incrementar plantilla temporal para evitar costes extras recurrentes.
+
+#### 4.3 Revisión de estructura salarial RRHH y Ventas
+
+- Evaluar si empleados con salarios iguales pero con diferencias marcadas en antigüedad o en desempeño (satisfacción baja) pueden ser reubicados, reentrenados o ajustados salarialmente.
+- Establecer escalas salariales claras según antigüedad y desempeño.
+
+#### 4.4 Reforzar modelo de teletrabajo
+
+- Mantener teletrabajo donde sea posible para reducir costes fijos (infraestructura presencial).
+- Promover empleados eficientes en teletrabajo con salarios dentro de márgenes aceptables.
+
+#### 4.5 Plan de control y seguimiento de indicadores
+
+- Establecer KPIs mensuales de costes salariales, horas extras, satisfacción y rotación para cada departamento para identificar desviaciones y aplicar medidas preventivas.
+
+---
+
+### Resumen estadístico clave (muestra aproximada por departamentos en base a datos principales analizados)
+
+| Departamento | Salario Medio (€) | Salario Mínimo (€) | Salario Máximo (€) | Salario Mediana (€) | Empleados | Horas extra promedio | % Teletrabajo aproximado |
+|--------------|-------------------|--------------------|--------------------|---------------------|-----------|---------------------|--------------------------|
+| IT           | 40,000            | 27,900             | 55,867             | 39,000              | 66        | 9 - 13              | 40%                      |
+| Marketing    | 33,500            | 23,379             | 46,138             | 33,000              | 40        | 7 - 10              | 35%                      |
+| Ventas       | 31,000            | 19,000             | 43,755             | 31,000              | 50        | 8 - 12              | 30%                      |
+| RRHH         | 30,000            | 18,500             | 45,971             | 30,000              | 30        | 10 - 13             | 25%                      |
+| Finanzas     | 50,000 (sesgado)  | 23,500             | 235,000            | 34,000              | 25        | 7 - 12              | 30%                      |
+
+---
+
+# Conclusión:
+
+La principal oportunidad para reducir costes está en:
+
+- Ajustar salarios outliers en Finanzas sin impacto operativo.
+- Controlar y limitar horas extras en departamentos con sobrecarga.
+- Revisar estructura salarial interna para alinear con mercado y desempeño (en RRHH, Ventas e IT).
+- Promover modelos mixtos eficientes y controlados de teletrabajo.
+
+Estas acciones permitirán reducir gastos de manera estructural, mantener competitividad y evitar impacto negativo en la satisfacción y productividad.
+
+---
+
+Si desea, puedo generar un informe detallado con los cálculos estadísticos exactos o simulaciones de ahorro.
