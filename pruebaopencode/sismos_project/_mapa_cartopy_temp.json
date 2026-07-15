@@ -1,0 +1,33 @@
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": [
+      "## Mapa mundial de sismos (Cartopy)\n",
+      "Visualizacion scatterplot sobre mapa, coloreando por magnitud."
+     ]
+    },
+    {
+     "cell_type": "code",
+     "metadata": {},
+     "source": [
+      "import matplotlib.pyplot as plt\n",
+      "import cartopy.crs as ccrs\n",
+      "import cartopy.feature as cfeature\n",
+      "\n",
+      "plt.figure(figsize=(14, 7))\n",
+      "ax = plt.axes(projection=ccrs.PlateCarree())\n",
+      "ax.coastlines(resolution='110m', linewidth=1)\n",
+      "ax.add_feature(cfeature.BORDERS, linewidth=0.5)\n",
+      "ax.add_feature(cfeature.LAND, facecolor='#F2F2F2', alpha=0.8)\n",
+      "ax.add_feature(cfeature.OCEAN, facecolor='#e0e7fa', alpha=0.8)\n",
+      "scatter = plt.scatter(df_limpio['longitud'], df_limpio['latitud'], c=df_limpio['magnitud'],\n                   cmap='Reds', alpha=0.8, s=60, edgecolor='k', transform=ccrs.PlateCarree())\n",
+      "plt.colorbar(scatter, label='Magnitud')\n",
+      "plt.title('Mapa mundial de sismos (scatterplot)')\n",
+      "plt.xlabel('Longitud')\n",
+      "plt.ylabel('Latitud')\n",
+      "plt.tight_layout()\n",
+      "plt.show()"
+     ],
+     "execution_count": null,
+     "outputs": []
+    }
